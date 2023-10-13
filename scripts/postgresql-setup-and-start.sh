@@ -13,7 +13,7 @@ echo ">>>>>>>>>>>>>>>>>>>>>>>>3"
 echo ">>>>>>>>>>>>>>>>>>>>>>>>4"
 # cd /var/lib/postgresql
 echo ">>>>>>>>>>>>>>>>>>>>>>>>5"
-mkdir /var/lib/postgresqldata
+mkdir /var/lib/postgresql/data
 # Only allow postgres user access to data directory
 echo ">>>>>>>>>>>>>>>>>>>>>>>>6"
 chmod 0700 /var/lib/postgresql/data
