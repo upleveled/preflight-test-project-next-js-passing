@@ -18,7 +18,7 @@ initdb -D /var/lib/postgresql/data
 sed "/^[# ]*log_destination/clog_destination = 'syslog'" -i /var/lib/postgresql/data/postgresql.conf
 
 echo "Starting PostgreSQL..."
-pg_ctl start -D /var/lib/postgresql/data &
+pg_ctl start -D /var/lib/postgresql/data
 
 echo "Creating database, user and schema..."
 psql -U postgres postgres << SQL
