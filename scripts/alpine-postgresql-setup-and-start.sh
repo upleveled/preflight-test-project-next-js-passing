@@ -3,7 +3,7 @@
 # Exit if any command exits with a non-zero exit code
 set -o errexit
 
-echo "Setting up PostgreSQL (for Alpine Linux)..."
+echo "Setting up PostgreSQL on Alpine Linux..."
 export PGDATA=/var/lib/postgresql/data
 mkdir "$PGDATA"
 # Only allow postgres user access to data directory
