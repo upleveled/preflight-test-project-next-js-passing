@@ -4,11 +4,17 @@
 set -o errexit
 
 echo "Setting up PostgreSQL on Alpine Linux..."
+
+# Create data directory
 export PGDATA=/var/lib/postgresql/data
 mkdir "$PGDATA"
+
 # Only allow postgres user access to data directory
 chmod 0700 "$PGDATA"
+
+# Initialize database in data directory
 initdb -D "$PGDATA"
+
 # Log to syslog, which is rotated (older logs automatically deleted)
 sed "/^[# ]*log_destination/clog_destination = 'syslog'" -i "$PGDATA/postgresql.conf"
 
