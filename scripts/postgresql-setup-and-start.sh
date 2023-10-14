@@ -9,8 +9,8 @@ chown postgres:postgres /run/postgresql
 mkdir /var/lib/postgresql/data
 # Only allow postgres user access to data directory
 chmod 0700 /var/lib/postgresql/data
-chown postgres:postgres /var/lib/postgresql/data
-su - postgres -c "initdb -D /var/lib/postgresql/data"
+initdb -D /var/lib/postgresql/data
+chown -R postgres:postgres /var/lib/postgresql/data
 # Log to syslog, which is rotated (older logs are
 # automatically deleted)
 sed "/^[# ]*log_destination/clog_destination = 'syslog'" -i /var/lib/postgresql/data/postgresql.conf
