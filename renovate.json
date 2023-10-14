@@ -1,0 +1,4 @@
+{
+  "extends": ["github>karlhorky/renovate-config:default.json5"],
+  "schedule": null
+}
