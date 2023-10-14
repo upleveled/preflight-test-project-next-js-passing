@@ -22,7 +22,7 @@ jobs:
       - name: Create database and allow user
         run: |
           sudo -u postgres createdb --owner=$PGUSERNAME $PGDATABASE
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v2
         with:
           version: 'latest'
