@@ -4,18 +4,16 @@
 set -o errexit
 
 echo "Setting up PostgreSQL..."
-# mkdir /run/postgresql
-# chown postgres:postgres /run/postgresql
-mkdir /var/lib/postgresql/data
+export PGDATA=/var/lib/postgresql/data
+mkdir "$PGDATA"
 # Only allow postgres user access to data directory
-chmod 0700 /var/lib/postgresql/data
-initdb -D /var/lib/postgresql/data
-# Log to syslog, which is rotated (older logs are
-# automatically deleted)
-sed "/^[# ]*log_destination/clog_destination = 'syslog'" -i /var/lib/postgresql/data/postgresql.conf
+chmod 0700 "$PGDATA"
+initdb -D "$PGDATA"
+# Log to syslog, which is rotated (older logs automatically deleted)
+sed "/^[# ]*log_destination/clog_destination = 'syslog'" -i "$PGDATA/postgresql.conf"
 
 echo "Starting PostgreSQL..."
-pg_ctl start -D /var/lib/postgresql/data
+pg_ctl start -D "$PGDATA"
 
 echo "Creating database, user and schema..."
 psql -U postgres postgres << SQL
