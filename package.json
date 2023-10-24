@@ -10,26 +10,26 @@
     "start": "next start"
   },
   "dependencies": {
-    "dotenv": "^16.3.1",
-    "ley": "^0.8.1",
+    "dotenv": "16.3.1",
+    "ley": "0.8.1",
     "next": "13.5.6",
-    "postgres": "^3.4.0",
-    "react": "^18",
-    "react-dom": "^18",
-    "sass": "^1.69.3",
-    "server-only": "^0.0.1",
-    "sharp": "^0.32.6",
-    "tsm": "^2.3.0"
+    "postgres": "3.4.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "1.69.3",
+    "server-only": "0.0.1",
+    "sharp": "0.32.6",
+    "tsm": "2.3.0"
   },
   "devDependencies": {
-    "@ts-safeql/eslint-plugin": "^2.0.3",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint-config-upleveled": "^5.1.0",
-    "libpg-query": "^15.0.2",
-    "stylelint": "^15.10.3",
-    "stylelint-config-upleveled": "^1.0.2",
-    "typescript": "^5"
+    "@ts-safeql/eslint-plugin": "2.0.3",
+    "@types/node": "20.8.8",
+    "@types/react": "18.2.31",
+    "@types/react-dom": "18.2.14",
+    "eslint-config-upleveled": "5.1.1",
+    "libpg-query": "15.0.2",
+    "stylelint": "15.10.3",
+    "stylelint-config-upleveled": "1.0.2",
+    "typescript": "5.2.2"
   }
 }
