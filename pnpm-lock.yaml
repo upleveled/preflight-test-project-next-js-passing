@@ -15,8 +15,8 @@ dependencies:
     specifier: 13.5.6
     version: 13.5.6(@babel/core@7.23.2)(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)
   postgres:
-    specifier: 3.4.1
-    version: 3.4.1
+    specifier: 3.4.2
+    version: 3.4.2
   react:
     specifier: 18.2.0
     version: 18.2.0
@@ -795,7 +795,7 @@ packages:
       fp-ts: 2.16.1
       libpg-query: 15.0.2
       pg-connection-string: 2.5.0
-      postgres: 3.4.1
+      postgres: 3.4.2
       recast: 0.22.0
       synckit: 0.8.5
       ts-pattern: 4.3.0
@@ -814,14 +814,14 @@ packages:
       '@ts-safeql/test-utils': 0.0.12
       fp-ts: 2.16.1
       pg-connection-string: 2.5.0
-      postgres: 3.4.1
+      postgres: 3.4.2
     dev: true
 
   /@ts-safeql/shared@0.2.0:
     resolution: {integrity: sha512-KceoUbXEBJqs9wz6Ay02Blje1P63PhCvCFY+oobtCrsmSudo8Uc2lZJ4m34iWHLzXGzMAa5U5zHTIcEGAfOhdg==}
     dependencies:
       minimatch: 9.0.3
-      postgres: 3.4.1
+      postgres: 3.4.2
     dev: true
 
   /@ts-safeql/test-utils@0.0.12:
@@ -830,7 +830,7 @@ packages:
       '@ts-safeql/shared': 0.2.0
       nanoid: 4.0.2
       pg-connection-string: 2.5.0
-      postgres: 3.4.1
+      postgres: 3.4.2
     dev: true
 
   /@types/eslint@8.44.6:
@@ -4240,8 +4240,8 @@ packages:
       picocolors: 1.0.0
       source-map-js: 1.0.2
 
-  /postgres@3.4.1:
-    resolution: {integrity: sha512-Wasjv6WEzrZXbwKByR2RGD7MBfj7VBqco3hYWz8ifzSAp6tb2L6MlmcKFzkmgV1jT7/vKlcSa+lxXZeTdeVMzQ==}
+  /postgres@3.4.2:
+    resolution: {integrity: sha512-0UcCGvDBSaAzLeWwiq+QVmiGfOPTosFb+sxJUUtd+7Pi/ByFPuz6Gq05LbS0sM1ghMWC5atuks3pfl34g0qmFw==}
     engines: {node: '>=12'}
 
   /prebuild-install@7.1.1:
