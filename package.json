@@ -26,7 +26,7 @@
     "@types/node": "20.8.9",
     "@types/react": "18.2.33",
     "@types/react-dom": "18.2.14",
-    "eslint-config-upleveled": "5.1.1",
+    "eslint-config-upleveled": "5.1.2",
     "libpg-query": "15.0.2",
     "stylelint": "15.11.0",
     "stylelint-config-upleveled": "1.0.2",
