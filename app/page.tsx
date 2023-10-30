@@ -8,7 +8,12 @@ type Logo = {
 };
 
 export default async function Home() {
-  const logos = await sql<Logo[]>`SELECT * FROM logos`;
+  const logos = await sql<Logo[]>`
+    SELECT
+      *
+    FROM
+      logos
+  `;
 
   return (
     <main className={styles.main}>
