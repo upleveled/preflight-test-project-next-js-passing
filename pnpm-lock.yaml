@@ -57,10 +57,10 @@ devDependencies:
     version: 15.0.2
   prettier-plugin-embed:
     specifier: ^0.2.5
-    version: 0.2.5(@prettier/plugin-php@0.20.1)(@prettier/plugin-ruby@4.0.2)(@prettier/plugin-xml@3.2.2)(@xml-tools/parser@1.0.11)(chevrotain@7.1.1)(prettier-plugin-glsl@0.1.2)(prettier-plugin-sql@0.15.1)(prettier@3.0.3)
+    version: 0.2.5(@prettier/plugin-php@0.20.1)(@prettier/plugin-ruby@4.0.2)(@prettier/plugin-xml@3.2.2)(@xml-tools/parser@1.0.11)(chevrotain@7.1.1)(prettier-plugin-glsl@0.1.2)(prettier-plugin-sql@0.16.0)(prettier@3.0.3)
   prettier-plugin-sql:
-    specifier: ^0.15.1
-    version: 0.15.1(prettier@3.0.3)
+    specifier: ^0.16.0
+    version: 0.16.0(prettier@3.0.3)
   stylelint:
     specifier: 15.11.0
     version: 15.11.0(typescript@5.2.2)
@@ -3559,6 +3559,11 @@ packages:
     engines: {node: '>=6'}
     hasBin: true
 
+  /jsox@1.2.118:
+    resolution: {integrity: sha512-ubYWn4WOc7HA7icvcQuIni1I7Xx4bI4KbRXbXzlr5e48hvdizeAbflBx97B629ZNH5RZnQ657Z5Z8dFgxFVrSQ==}
+    hasBin: true
+    dev: true
+
   /jsx-ast-utils@3.3.5:
     resolution: {integrity: sha512-ZZow9HBI5O6EPgSJLUb8n2NKgmVWTwCvHGwFuJlMjvLFqlGG6pjirPhtdsseaLZjSibD8eegzmYpUZwoIlj2cQ==}
     engines: {node: '>=4.0'}
@@ -4428,7 +4433,7 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-embed@0.2.5(@prettier/plugin-php@0.20.1)(@prettier/plugin-ruby@4.0.2)(@prettier/plugin-xml@3.2.2)(@xml-tools/parser@1.0.11)(chevrotain@7.1.1)(prettier-plugin-glsl@0.1.2)(prettier-plugin-sql@0.15.1)(prettier@3.0.3):
+  /prettier-plugin-embed@0.2.5(@prettier/plugin-php@0.20.1)(@prettier/plugin-ruby@4.0.2)(@prettier/plugin-xml@3.2.2)(@xml-tools/parser@1.0.11)(chevrotain@7.1.1)(prettier-plugin-glsl@0.1.2)(prettier-plugin-sql@0.16.0)(prettier@3.0.3):
     resolution: {integrity: sha512-nsqIHqCtA/g8GbpU/yS+NcaucCnpNs/BmcfrFlNsLX1kgA/DZodcpb91smwuiDVh788aJGqa+lZ9MK8eZyjNyg==}
     peerDependencies:
       '@prettier/plugin-php': ^0.20.1
@@ -4447,7 +4452,7 @@ packages:
       chevrotain: 7.1.1
       prettier: 3.0.3
       prettier-plugin-glsl: 0.1.2(prettier@3.0.3)
-      prettier-plugin-sql: 0.15.1(prettier@3.0.3)
+      prettier-plugin-sql: 0.16.0(prettier@3.0.3)
       short-unique-id: 5.0.3
     dev: true
 
@@ -4462,15 +4467,16 @@ packages:
       prettier: 3.0.3
     dev: true
 
-  /prettier-plugin-sql@0.15.1(prettier@3.0.3):
-    resolution: {integrity: sha512-CWYgo4dXDhjA6ofvC6yUjsEOSzb5qdLmaloK8V+mPiSjkvMbatWsSTKjkV2g4k17shtqYmnU+WWOaYpFNbNL1A==}
+  /prettier-plugin-sql@0.16.0(prettier@3.0.3):
+    resolution: {integrity: sha512-ISKL8EpiW9VSaHxmezr/lYiBNgcJvCF5V4NR2SCGZcv4vawn1negBD5jVVf7VN/wqTLd56U/taJiQPhQdbrYdA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
-      prettier: ^3.0.0
+      prettier: ^3.0.3
     dependencies:
+      jsox: 1.2.118
       node-sql-parser: 4.11.0
       prettier: 3.0.3
-      sql-formatter: 12.2.4
+      sql-formatter: 13.1.0
       tslib: 2.6.2
     dev: true
 
@@ -4982,8 +4988,8 @@ packages:
     resolution: {integrity: sha512-eWN+LnM3GR6gPu35WxNgbGl8rmY1AEmoMDvL/QD6zYmPWgywxWqJWNdLGT+ke8dKNWrcYgYjPpG5gbTfghP8rw==}
     dev: true
 
-  /sql-formatter@12.2.4:
-    resolution: {integrity: sha512-Qj45LEHSfgrdYDOrAtIkR8SdS10SWcqCIM2WZwQwMKF2v9sM0K2dlThWPS7eYCUrhttZIrU1WwuIwHk7MjsWOw==}
+  /sql-formatter@13.1.0:
+    resolution: {integrity: sha512-/nZQXuN7KzipFNM20ko+dHY4kOr9rymSfZLUDED8rhx3m8OK5y74jcyN+y1L51ZqHqiB0kp40VdpZP99uWvQdA==}
     hasBin: true
     dependencies:
       argparse: 2.0.1

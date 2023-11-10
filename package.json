@@ -29,7 +29,7 @@
     "eslint-config-upleveled": "6.2.0",
     "libpg-query": "15.0.2",
     "prettier-plugin-embed": "^0.2.5",
-    "prettier-plugin-sql": "^0.15.1",
+    "prettier-plugin-sql": "^0.16.0",
     "stylelint": "15.11.0",
     "stylelint-config-upleveled": "1.0.2",
     "typescript": "5.2.2"
