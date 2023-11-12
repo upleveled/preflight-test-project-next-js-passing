@@ -2,6 +2,7 @@
   "name": "preflight-test-project-next-js-passing",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "next build",
     "dev": "next dev",
@@ -26,7 +27,7 @@
     "@types/node": "20.9.0",
     "@types/react": "18.2.37",
     "@types/react-dom": "18.2.15",
-    "eslint-config-upleveled": "6.2.0",
+    "eslint-config-upleveled": "7.0.0-3",
     "libpg-query": "15.0.2",
     "prettier-plugin-embed": "^0.2.5",
     "prettier-plugin-sql": "^0.16.0",
