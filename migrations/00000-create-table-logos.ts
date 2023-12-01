@@ -5,13 +5,13 @@ export async function up(sql: Sql) {
     CREATE TABLE
       logos (
         id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-        name VARCHAR(20) NOT NULL
+        NAME VARCHAR(20) NOT NULL
       )
   `;
 
   await sql`
     INSERT INTO
-      logos (name)
+      logos (NAME)
     VALUES
       (
         'Next.js'
