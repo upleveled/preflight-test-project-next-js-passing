@@ -2,11 +2,10 @@ import { Sql } from 'postgres';
 
 export async function up(sql: Sql) {
   await sql`
-    CREATE TABLE
-      logos (
-        id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-        NAME VARCHAR(20) NOT NULL
-      )
+    CREATE TABLE logos (
+      id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+      NAME VARCHAR(20) NOT NULL
+    )
   `;
 
   await sql`
