@@ -32,7 +32,7 @@
     "prettier-plugin-embed": "^0.3.0",
     "prettier-plugin-sql": "^0.18.0",
     "stylelint": "16.1.0",
-    "stylelint-config-upleveled": "1.0.6",
+    "stylelint-config-upleveled": "1.0.7",
     "typescript": "5.3.3"
   }
 }
