@@ -56,8 +56,8 @@ devDependencies:
     specifier: 15.0.2
     version: 15.0.2
   prettier-plugin-embed:
-    specifier: ^0.3.0
-    version: 0.3.0
+    specifier: ^0.4.0
+    version: 0.4.0
   prettier-plugin-sql:
     specifier: ^0.18.0
     version: 0.18.0(prettier@3.0.3)
@@ -1915,6 +1915,15 @@ packages:
         optional: true
     dependencies:
       ms: 2.1.2
+
+  /dedent@1.5.1:
+    resolution: {integrity: sha512-+LxW+KLWxu3HW3M2w2ympwtqPrqYRzU8fqi6Fhd18fBALe15blJPI/I4+UHveMVG6lJqB4JNd4UG0S5cnVHwIg==}
+    peerDependencies:
+      babel-plugin-macros: ^3.1.0
+    peerDependenciesMeta:
+      babel-plugin-macros:
+        optional: true
+    dev: true
 
   /deep-is@0.1.4:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
@@ -4481,11 +4490,14 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-embed@0.3.0:
-    resolution: {integrity: sha512-FXmXIgr/H+T6xOw3lV5mX5ZGcIEMm7kdiPPYdlSg++21GfQZOMmoZw9XofPfszRHHMWUrDtDZIV9uY85k7dkag==}
+  /prettier-plugin-embed@0.4.0:
+    resolution: {integrity: sha512-xoGmZPWtiC8Fx8JM5zxiq/u24kDrUzI3woqmcoYdgLzuHw3o7pWdtwI+vV0ee49hKVtNndOg9yfMKlRHmBkQyQ==}
     dependencies:
+      dedent: 1.5.1
       micro-memoize: 4.1.2
       package-up: 5.0.0
+    transitivePeerDependencies:
+      - babel-plugin-macros
     dev: true
 
   /prettier-plugin-sql@0.18.0(prettier@3.0.3):
