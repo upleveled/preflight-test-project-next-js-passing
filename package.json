@@ -19,7 +19,7 @@
     "react-dom": "18.2.0",
     "sass": "1.69.7",
     "server-only": "0.0.1",
-    "sharp": "0.33.1",
+    "sharp": "0.33.2",
     "tsm": "2.3.0"
   },
   "devDependencies": {
