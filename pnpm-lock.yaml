@@ -62,11 +62,11 @@ devDependencies:
     specifier: ^0.18.0
     version: 0.18.0(prettier@3.0.3)
   stylelint:
-    specifier: 16.2.0
-    version: 16.2.0(typescript@5.3.3)
+    specifier: 16.2.1
+    version: 16.2.1(typescript@5.3.3)
   stylelint-config-upleveled:
     specifier: 1.0.7
-    version: 1.0.7(postcss@8.4.33)(stylelint@16.2.0)
+    version: 1.0.7(postcss@8.4.33)(stylelint@16.2.1)
   typescript:
     specifier: 5.3.3
     version: 5.3.3
@@ -5141,17 +5141,17 @@ packages:
       react: 18.2.0
     dev: false
 
-  /stylelint-config-css-modules@4.4.0(stylelint@16.2.0):
+  /stylelint-config-css-modules@4.4.0(stylelint@16.2.1):
     resolution: {integrity: sha512-J93MtxPjRzs/TjwbJ5y9SQy4iIqULXwL1CF1yx2tQCJfS/VZUcDAmoGOwqlLbhHXSQtZO5XQiA75NVWUR3KDCQ==}
     peerDependencies:
       stylelint: ^14.5.1 || ^15.0.0 || ^16.0.0
     dependencies:
-      stylelint: 16.2.0(typescript@5.3.3)
+      stylelint: 16.2.1(typescript@5.3.3)
     optionalDependencies:
-      stylelint-scss: 6.0.0(stylelint@16.2.0)
+      stylelint-scss: 6.0.0(stylelint@16.2.1)
     dev: true
 
-  /stylelint-config-recommended-scss@14.0.0(postcss@8.4.33)(stylelint@16.2.0):
+  /stylelint-config-recommended-scss@14.0.0(postcss@8.4.33)(stylelint@16.2.1):
     resolution: {integrity: sha512-HDvpoOAQ1RpF+sPbDOT2Q2/YrBDEJDnUymmVmZ7mMCeNiFSdhRdyGEimBkz06wsN+HaFwUh249gDR+I9JR7Onw==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
@@ -5163,36 +5163,36 @@ packages:
     dependencies:
       postcss: 8.4.33
       postcss-scss: 4.0.9(postcss@8.4.33)
-      stylelint: 16.2.0(typescript@5.3.3)
-      stylelint-config-recommended: 14.0.0(stylelint@16.2.0)
-      stylelint-scss: 6.0.0(stylelint@16.2.0)
+      stylelint: 16.2.1(typescript@5.3.3)
+      stylelint-config-recommended: 14.0.0(stylelint@16.2.1)
+      stylelint-scss: 6.0.0(stylelint@16.2.1)
     dev: true
 
-  /stylelint-config-recommended@14.0.0(stylelint@16.2.0):
+  /stylelint-config-recommended@14.0.0(stylelint@16.2.1):
     resolution: {integrity: sha512-jSkx290CglS8StmrLp2TxAppIajzIBZKYm3IxT89Kg6fGlxbPiTiyH9PS5YUuVAFwaJLl1ikiXX0QWjI0jmgZQ==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
       stylelint: ^16.0.0
     dependencies:
-      stylelint: 16.2.0(typescript@5.3.3)
+      stylelint: 16.2.1(typescript@5.3.3)
     dev: true
 
-  /stylelint-config-upleveled@1.0.7(postcss@8.4.33)(stylelint@16.2.0):
+  /stylelint-config-upleveled@1.0.7(postcss@8.4.33)(stylelint@16.2.1):
     resolution: {integrity: sha512-L+fct8AmdQclq1S3/o81qE409bRD0ow9n6+xixNY/PTXh0/u7+G7UDAwGmFidZR1R4JlsqBH7Dg+BRYJ/tniAA==}
     engines: {node: '>=20.9.0'}
     peerDependencies:
       stylelint: ^16.1.0
     dependencies:
       postcss-styled-syntax: 0.6.2(postcss@8.4.33)
-      stylelint: 16.2.0(typescript@5.3.3)
-      stylelint-config-css-modules: 4.4.0(stylelint@16.2.0)
-      stylelint-config-recommended: 14.0.0(stylelint@16.2.0)
-      stylelint-config-recommended-scss: 14.0.0(postcss@8.4.33)(stylelint@16.2.0)
+      stylelint: 16.2.1(typescript@5.3.3)
+      stylelint-config-css-modules: 4.4.0(stylelint@16.2.1)
+      stylelint-config-recommended: 14.0.0(stylelint@16.2.1)
+      stylelint-config-recommended-scss: 14.0.0(postcss@8.4.33)(stylelint@16.2.1)
     transitivePeerDependencies:
       - postcss
     dev: true
 
-  /stylelint-scss@6.0.0(stylelint@16.2.0):
+  /stylelint-scss@6.0.0(stylelint@16.2.1):
     resolution: {integrity: sha512-N1xV/Ef5PNRQQt9E45unzGvBUN1KZxCI8B4FgN/pMfmyRYbZGVN4y9qWlvOMdScU17c8VVCnjIHTVn38Bb6qSA==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
@@ -5203,11 +5203,11 @@ packages:
       postcss-resolve-nested-selector: 0.1.1
       postcss-selector-parser: 6.0.13
       postcss-value-parser: 4.2.0
-      stylelint: 16.2.0(typescript@5.3.3)
+      stylelint: 16.2.1(typescript@5.3.3)
     dev: true
 
-  /stylelint@16.2.0(typescript@5.3.3):
-    resolution: {integrity: sha512-gwqU5AkIb52wrAzzn+359S3NIJDMl02TXLUaV2tzA/L6jUdpTwNt+MCxHlc8+Hb2bUHlYVo92YeSIryF2gJthA==}
+  /stylelint@16.2.1(typescript@5.3.3):
+    resolution: {integrity: sha512-SfIMGFK+4n7XVAyv50CpVfcGYWG4v41y6xG7PqOgQSY8M/PgdK0SQbjWFblxjJZlN9jNq879mB4BCZHJRIJ1hA==}
     engines: {node: '>=18.12.0'}
     hasBin: true
     dependencies:
