@@ -44,14 +44,14 @@ devDependencies:
     specifier: 20.11.16
     version: 20.11.16
   '@types/react':
-    specifier: 18.2.53
-    version: 18.2.53
+    specifier: 18.2.54
+    version: 18.2.54
   '@types/react-dom':
     specifier: 18.2.18
     version: 18.2.18
   eslint-config-upleveled:
-    specifier: 7.6.0
-    version: 7.6.0(@babel/core@7.23.2)(@types/eslint@8.56.2)(@types/node@20.11.16)(@types/react-dom@18.2.18)(@types/react@18.2.53)(eslint@8.56.0)(globals@13.24.0)(typescript@5.3.3)
+    specifier: 7.7.0
+    version: 7.7.0(@babel/core@7.23.2)(@types/eslint@8.56.2)(@types/node@20.11.16)(@types/react-dom@18.2.18)(@types/react@18.2.54)(eslint@8.56.0)(globals@13.24.0)(typescript@5.3.3)
   libpg-query:
     specifier: 15.0.2
     version: 15.0.2
@@ -1090,11 +1090,11 @@ packages:
   /@types/react-dom@18.2.18:
     resolution: {integrity: sha512-TJxDm6OfAX2KJWJdMEVTwWke5Sc/E/RlnPGvGfS0W7+6ocy2xhDVQVh/KvC2Uf7kACs+gDytdusDSdWfWkaNzw==}
     dependencies:
-      '@types/react': 18.2.53
+      '@types/react': 18.2.54
     dev: true
 
-  /@types/react@18.2.53:
-    resolution: {integrity: sha512-52IHsMDT8qATp9B9zoOyobW8W3/0QhaJQTw1HwRj0UY2yBpCAQ7+S/CqHYQ8niAm3p4ji+rWUQ9UCib0GxQ60w==}
+  /@types/react@18.2.54:
+    resolution: {integrity: sha512-039k+vrVJymDoe2y+HLk3O3oI3sa+C8KNjuDKofqrIJK26ramnqLNj9VJTaxAzFGMvpW/79HrrAJapHzpQ9fGQ==}
     dependencies:
       '@types/prop-types': 15.7.8
       '@types/scheduler': 0.16.4
@@ -2366,8 +2366,8 @@ packages:
       parse-gitignore: 2.0.0
     dev: true
 
-  /eslint-config-upleveled@7.6.0(@babel/core@7.23.2)(@types/eslint@8.56.2)(@types/node@20.11.16)(@types/react-dom@18.2.18)(@types/react@18.2.53)(eslint@8.56.0)(globals@13.24.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-BJjOBnYWmXLG/ldRZoZN5B2TOVGBOhkfE7aIAIcFFIeUngsRu/WscpujStbRWXDVFLJG65Wd0IOlkIJICi/3fA==}
+  /eslint-config-upleveled@7.7.0(@babel/core@7.23.2)(@types/eslint@8.56.2)(@types/node@20.11.16)(@types/react-dom@18.2.18)(@types/react@18.2.54)(eslint@8.56.0)(globals@13.24.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-Tubt5Uq8cgCr9qmWtei3R7bpCik0D4lU1b6C77FmRn9FTSiY5BBdW8+2G+6CuoiYKO63OAnDxea46fPpGOBw4Q==}
     engines: {node: '>=20.9.0'}
     hasBin: true
     peerDependencies:
@@ -2383,7 +2383,7 @@ packages:
       '@next/eslint-plugin-next': 14.1.0
       '@types/eslint': 8.56.2
       '@types/node': 20.11.16
-      '@types/react': 18.2.53
+      '@types/react': 18.2.54
       '@types/react-dom': 18.2.18
       '@typescript-eslint/eslint-plugin': 6.20.0(@typescript-eslint/parser@6.20.0)(eslint@8.56.0)(typescript@5.3.3)
       '@typescript-eslint/parser': 6.20.0(eslint@8.56.0)(typescript@5.3.3)
