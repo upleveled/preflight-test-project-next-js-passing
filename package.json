@@ -27,7 +27,7 @@
     "@types/node": "20.11.16",
     "@types/react": "18.2.53",
     "@types/react-dom": "18.2.18",
-    "eslint-config-upleveled": "7.5.0",
+    "eslint-config-upleveled": "7.5.1",
     "libpg-query": "15.0.2",
     "prettier-plugin-embed": "^0.4.0",
     "prettier-plugin-sql": "^0.18.0",
