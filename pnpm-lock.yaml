@@ -55,12 +55,15 @@ devDependencies:
   libpg-query:
     specifier: 15.0.2
     version: 15.0.2
+  prettier:
+    specifier: ^3.2.5
+    version: 3.2.5
   prettier-plugin-embed:
     specifier: ^0.4.0
     version: 0.4.0
   prettier-plugin-sql:
     specifier: ^0.18.0
-    version: 0.18.0(prettier@3.0.3)
+    version: 0.18.0(prettier@3.2.5)
   stylelint:
     specifier: 16.2.1
     version: 16.2.1(typescript@5.3.3)
@@ -4447,7 +4450,7 @@ packages:
       - babel-plugin-macros
     dev: true
 
-  /prettier-plugin-sql@0.18.0(prettier@3.0.3):
+  /prettier-plugin-sql@0.18.0(prettier@3.2.5):
     resolution: {integrity: sha512-E7WXooLNtWyv79sYYHtQbfvXZ5B/OOR0ySBsB2evfrfvD4wJos1OKLBvVLC/a7+7YpG30bSUTgc2DEwz8ctPmQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -4455,13 +4458,13 @@ packages:
     dependencies:
       jsox: 1.2.118
       node-sql-parser: 4.17.0
-      prettier: 3.0.3
+      prettier: 3.2.5
       sql-formatter: 15.0.2
       tslib: 2.6.2
     dev: true
 
-  /prettier@3.0.3:
-    resolution: {integrity: sha512-L/4pUDMxcNa8R/EthV08Zt42WBO4h1rarVtK0K+QJG0X187OLo7l699jWw0GKuwzkPQ//jMFA/8Xm6Fh3J/DAg==}
+  /prettier@3.2.5:
+    resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
