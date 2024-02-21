@@ -13,7 +13,7 @@ dependencies:
     version: 16.4.5
   next:
     specifier: 14.1.0
-    version: 14.1.0(@babel/core@7.23.9)(react-dom@18.2.0)(react@18.2.0)(sass@1.71.0)
+    version: 14.1.0(@babel/core@7.23.9)(react-dom@18.2.0)(react@18.2.0)(sass@1.71.1)
   postgres:
     specifier: 3.4.3
     version: 3.4.3
@@ -24,8 +24,8 @@ dependencies:
     specifier: 18.2.0
     version: 18.2.0(react@18.2.0)
   sass:
-    specifier: 1.71.0
-    version: 1.71.0
+    specifier: 1.71.1
+    version: 1.71.1
   server-only:
     specifier: 0.0.1
     version: 0.0.1
@@ -39,7 +39,7 @@ dependencies:
 devDependencies:
   '@ts-safeql/eslint-plugin':
     specifier: 2.0.3
-    version: 2.0.3(eslint@8.56.0)(libpg-query@16.0.0)(typescript@5.3.3)
+    version: 2.0.3(eslint@8.56.0)(libpg-query@16.0.1)(typescript@5.3.3)
   '@types/node':
     specifier: 20.11.19
     version: 20.11.19
@@ -53,8 +53,8 @@ devDependencies:
     specifier: 7.8.1
     version: 7.8.1(@babel/core@7.23.9)(@types/eslint@8.56.2)(@types/node@20.11.19)(@types/react-dom@18.2.19)(@types/react@18.2.57)(eslint@8.56.0)(globals@14.0.0)(typescript@5.3.3)
   libpg-query:
-    specifier: 16.0.0
-    version: 16.0.0
+    specifier: 16.0.1
+    version: 16.0.1
   prettier:
     specifier: ^3.2.5
     version: 3.2.5
@@ -1182,7 +1182,7 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /@ts-safeql/eslint-plugin@2.0.3(eslint@8.56.0)(libpg-query@16.0.0)(typescript@5.3.3):
+  /@ts-safeql/eslint-plugin@2.0.3(eslint@8.56.0)(libpg-query@16.0.1)(typescript@5.3.3):
     resolution: {integrity: sha512-sMvq8hjBY5leWhq5/j+bJ432aWJO1RGaQup3v9FtfCwgvkgWudSaJ7PoDe1SU4kO2bolkdj4ZQPexRc5MTZTrQ==}
     peerDependencies:
       libpg-query: '>=13.2.5'
@@ -1194,7 +1194,7 @@ packages:
       chokidar: 3.5.3
       esbuild: 0.17.17
       fp-ts: 2.16.2
-      libpg-query: 16.0.0
+      libpg-query: 16.0.1
       pg-connection-string: 2.5.0
       postgres: 3.4.3
       recast: 0.22.0
@@ -3664,8 +3664,8 @@ packages:
       type-check: 0.4.0
     dev: true
 
-  /libpg-query@16.0.0:
-    resolution: {integrity: sha512-C/IFjsInTNH4tsyiVuvhS8AakX+TnXPTWoe1So10u5em1Ht1FY2GsAbgRMWCvIZK6MPA/bwNQrB4a9lXz9JqUg==}
+  /libpg-query@16.0.1:
+    resolution: {integrity: sha512-HGnForYkm1acNS3UXPjKyxp0I2X3UsGIsY28sLcERjPMWvz4H0umkPYycR8xRH65GOyLn7LoXux0ynASLShmRw==}
     requiresBuild: true
     dependencies:
       '@mapbox/node-pre-gyp': 1.0.11
@@ -3930,7 +3930,7 @@ packages:
     engines: {node: '>= 0.6'}
     dev: true
 
-  /next@14.1.0(@babel/core@7.23.9)(react-dom@18.2.0)(react@18.2.0)(sass@1.71.0):
+  /next@14.1.0(@babel/core@7.23.9)(react-dom@18.2.0)(react@18.2.0)(sass@1.71.1):
     resolution: {integrity: sha512-wlzrsbfeSU48YQBjZhDzOwhWhGsy+uQycR8bHAOt1LY1bn3zZEcDyHQOEoN3aWzQ8LHCAJ1nqrWCc9XF2+O45Q==}
     engines: {node: '>=18.17.0'}
     hasBin: true
@@ -3953,7 +3953,7 @@ packages:
       postcss: 8.4.31
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      sass: 1.71.0
+      sass: 1.71.1
       styled-jsx: 5.1.1(@babel/core@7.23.9)(react@18.2.0)
     optionalDependencies:
       '@next/swc-darwin-arm64': 14.1.0
@@ -4651,8 +4651,8 @@ packages:
     dev: true
     optional: true
 
-  /sass@1.71.0:
-    resolution: {integrity: sha512-HKKIKf49Vkxlrav3F/w6qRuPcmImGVbIXJ2I3Kg0VMA+3Bav+8yE9G5XmP5lMj6nl4OlqbPftGAscNaNu28b8w==}
+  /sass@1.71.1:
+    resolution: {integrity: sha512-wovtnV2PxzteLlfNzbgm1tFXPLoZILYAMJtvoXXkD7/+1uP41eKkIt1ypWq5/q2uT94qHjXehEYfmjKOvjL9sg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
