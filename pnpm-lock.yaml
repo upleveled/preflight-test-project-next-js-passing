@@ -44,14 +44,14 @@ devDependencies:
     specifier: 20.11.20
     version: 20.11.20
   '@types/react':
-    specifier: 18.2.58
-    version: 18.2.58
+    specifier: 18.2.59
+    version: 18.2.59
   '@types/react-dom':
     specifier: 18.2.19
     version: 18.2.19
   eslint-config-upleveled:
     specifier: 7.8.1
-    version: 7.8.1(@babel/core@7.23.9)(@types/eslint@8.56.3)(@types/node@20.11.20)(@types/react-dom@18.2.19)(@types/react@18.2.58)(eslint@8.57.0)(globals@14.0.0)(typescript@5.3.3)
+    version: 7.8.1(@babel/core@7.23.9)(@types/eslint@8.56.3)(@types/node@20.11.20)(@types/react-dom@18.2.19)(@types/react@18.2.59)(eslint@8.57.0)(globals@14.0.0)(typescript@5.3.3)
   libpg-query:
     specifier: 16.0.1
     version: 16.0.1
@@ -1270,11 +1270,11 @@ packages:
   /@types/react-dom@18.2.19:
     resolution: {integrity: sha512-aZvQL6uUbIJpjZk4U8JZGbau9KDeAwMfmhyWorxgBkqDIEf6ROjRozcmPIicqsUwPUjbkDfHKgGee1Lq65APcA==}
     dependencies:
-      '@types/react': 18.2.58
+      '@types/react': 18.2.59
     dev: true
 
-  /@types/react@18.2.58:
-    resolution: {integrity: sha512-TaGvMNhxvG2Q0K0aYxiKfNDS5m5ZsoIBBbtfUorxdH4NGSXIlYvZxLJI+9Dd3KjeB3780bciLyAb7ylO8pLhPw==}
+  /@types/react@18.2.59:
+    resolution: {integrity: sha512-DE+F6BYEC8VtajY85Qr7mmhTd/79rJKIHCg99MU9SWPB4xvLb6D1za2vYflgZfmPqQVEr6UqJTnLXEwzpVPuOg==}
     dependencies:
       '@types/prop-types': 15.7.11
       '@types/scheduler': 0.16.8
@@ -2432,7 +2432,7 @@ packages:
       parse-gitignore: 2.0.0
     dev: true
 
-  /eslint-config-upleveled@7.8.1(@babel/core@7.23.9)(@types/eslint@8.56.3)(@types/node@20.11.20)(@types/react-dom@18.2.19)(@types/react@18.2.58)(eslint@8.57.0)(globals@14.0.0)(typescript@5.3.3):
+  /eslint-config-upleveled@7.8.1(@babel/core@7.23.9)(@types/eslint@8.56.3)(@types/node@20.11.20)(@types/react-dom@18.2.19)(@types/react@18.2.59)(eslint@8.57.0)(globals@14.0.0)(typescript@5.3.3):
     resolution: {integrity: sha512-jvJefouBciyUlxcxZJl59ORHxluUyE0yt9kWGmBhcl83UPkdMJGOhbxTsg9e0Ubpx1J0BaV34XtgiBga9ARBrA==}
     engines: {node: '>=20.9.0'}
     hasBin: true
@@ -2449,7 +2449,7 @@ packages:
       '@next/eslint-plugin-next': 14.1.0
       '@types/eslint': 8.56.3
       '@types/node': 20.11.20
-      '@types/react': 18.2.58
+      '@types/react': 18.2.59
       '@types/react-dom': 18.2.19
       '@typescript-eslint/eslint-plugin': 7.0.2(@typescript-eslint/parser@7.0.2)(eslint@8.57.0)(typescript@5.3.3)
       '@typescript-eslint/parser': 7.0.2(eslint@8.57.0)(typescript@5.3.3)
