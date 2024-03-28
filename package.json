@@ -19,20 +19,20 @@
     "react-dom": "18.2.0",
     "sass": "1.72.0",
     "server-only": "0.0.1",
-    "sharp": "0.33.2",
+    "sharp": "0.33.3",
     "tsx": "4.7.1"
   },
   "devDependencies": {
     "@ts-safeql/eslint-plugin": "2.0.3",
     "@types/node": "20.11.30",
-    "@types/react": "18.2.67",
-    "@types/react-dom": "18.2.22",
-    "eslint-config-upleveled": "7.8.2",
+    "@types/react": "18.2.73",
+    "@types/react-dom": "18.2.23",
+    "eslint-config-upleveled": "7.8.3",
     "libpg-query": "16.0.1",
     "prettier": "^3.2.5",
     "prettier-plugin-embed": "^0.4.0",
     "prettier-plugin-sql": "^0.18.0",
-    "stylelint": "16.2.1",
+    "stylelint": "16.3.1",
     "stylelint-config-upleveled": "1.1.0",
     "typescript": "5.4.3"
   }
