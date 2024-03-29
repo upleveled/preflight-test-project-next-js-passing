@@ -39,7 +39,7 @@ dependencies:
 devDependencies:
   '@ts-safeql/eslint-plugin':
     specifier: 2.0.3
-    version: 2.0.3(eslint@8.57.0)(libpg-query@16.0.1)(typescript@5.4.3)
+    version: 2.0.3(eslint@8.57.0)(libpg-query@16.1.0)(typescript@5.4.3)
   '@types/node':
     specifier: 20.11.30
     version: 20.11.30
@@ -53,8 +53,8 @@ devDependencies:
     specifier: 7.8.3
     version: 7.8.3(@babel/core@7.24.0)(@types/eslint@8.56.6)(@types/node@20.11.30)(@types/react-dom@18.2.23)(@types/react@18.2.73)(eslint@8.57.0)(globals@14.0.0)(typescript@5.4.3)
   libpg-query:
-    specifier: 16.0.1
-    version: 16.0.1
+    specifier: 16.1.0
+    version: 16.1.0
   prettier:
     specifier: ^3.2.5
     version: 3.2.5
@@ -69,7 +69,7 @@ devDependencies:
     version: 16.3.1(typescript@5.4.3)
   stylelint-config-upleveled:
     specifier: 1.1.0
-    version: 1.1.0(postcss@8.4.35)(stylelint@16.3.1)
+    version: 1.1.0(postcss@8.4.38)(stylelint@16.3.1)
   typescript:
     specifier: 5.4.3
     version: 5.4.3
@@ -1016,7 +1016,7 @@ packages:
     resolution: {integrity: sha512-Yhlar6v9WQgUp/He7BdgzOz8lqMQ8sU+jkCq7Wx8Myc5YFJLbEe7lgui/V7G1qB1DJykHSGwreceSaD60Y0PUQ==}
     hasBin: true
     dependencies:
-      detect-libc: 2.0.2
+      detect-libc: 2.0.3
       https-proxy-agent: 5.0.1
       make-dir: 3.1.0
       node-fetch: 2.7.0
@@ -1186,7 +1186,7 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /@ts-safeql/eslint-plugin@2.0.3(eslint@8.57.0)(libpg-query@16.0.1)(typescript@5.4.3):
+  /@ts-safeql/eslint-plugin@2.0.3(eslint@8.57.0)(libpg-query@16.1.0)(typescript@5.4.3):
     resolution: {integrity: sha512-sMvq8hjBY5leWhq5/j+bJ432aWJO1RGaQup3v9FtfCwgvkgWudSaJ7PoDe1SU4kO2bolkdj4ZQPexRc5MTZTrQ==}
     peerDependencies:
       libpg-query: '>=13.2.5'
@@ -1198,7 +1198,7 @@ packages:
       chokidar: 3.5.3
       esbuild: 0.17.17
       fp-ts: 2.16.2
-      libpg-query: 16.0.1
+      libpg-query: 16.1.0
       pg-connection-string: 2.5.0
       postgres: 3.4.4
       recast: 0.22.0
@@ -2197,15 +2197,9 @@ packages:
     engines: {node: '>=12.20'}
     dev: true
 
-  /detect-libc@2.0.2:
-    resolution: {integrity: sha512-UX6sGumvvqSaXgdKGUsgZWqcUyIXZ/vZTrlRT/iobiKhGL0zL4d3osHj3uqllWJK+i+sixDS/3COVEOFbupFyw==}
-    engines: {node: '>=8'}
-    dev: true
-
   /detect-libc@2.0.3:
     resolution: {integrity: sha512-bwy0MGW55bG41VqxxypOsdSdGqLwXPI/focwgTYCFMbdUiBAxLg9CFzG08sz2aqzknwiX7Hkl0bQENjg8iLByw==}
     engines: {node: '>=8'}
-    dev: false
 
   /detect-newline@4.0.1:
     resolution: {integrity: sha512-qE3Veg1YXzGHQhlA6jzebZN2qVf6NX+A7m7qlhCGG30dJixrAQhYOsJjsnBjJkCSmuOPpCk30145fr8FV0bzog==}
@@ -3753,8 +3747,8 @@ packages:
       type-check: 0.4.0
     dev: true
 
-  /libpg-query@16.0.1:
-    resolution: {integrity: sha512-HGnForYkm1acNS3UXPjKyxp0I2X3UsGIsY28sLcERjPMWvz4H0umkPYycR8xRH65GOyLn7LoXux0ynASLShmRw==}
+  /libpg-query@16.1.0:
+    resolution: {integrity: sha512-8UHEwWEU++ZQ0mnLjW0ZueVuZEJSxchWGCsg04ZWEXDLmmfg9Cpa968ShfHFmDXKsB1ugQGppEqSa9iwaGsCMg==}
     requiresBuild: true
     dependencies:
       '@mapbox/node-pre-gyp': 1.0.11
@@ -4395,13 +4389,13 @@ packages:
       postcss: 8.4.38
     dev: true
 
-  /postcss-scss@4.0.9(postcss@8.4.35):
+  /postcss-scss@4.0.9(postcss@8.4.38):
     resolution: {integrity: sha512-AjKOeiwAitL/MXxQW2DliT28EKukvvbEWx3LBmJIRN8KfBGZbRTxNYW0kSqi1COiTZ57nZ9NW06S6ux//N1c9A==}
     engines: {node: '>=12.0'}
     peerDependencies:
       postcss: ^8.4.29
     dependencies:
-      postcss: 8.4.35
+      postcss: 8.4.38
     dev: true
 
   /postcss-selector-parser@6.0.15:
@@ -4420,13 +4414,13 @@ packages:
       util-deprecate: 1.0.2
     dev: true
 
-  /postcss-styled-syntax@0.6.4(postcss@8.4.35):
+  /postcss-styled-syntax@0.6.4(postcss@8.4.38):
     resolution: {integrity: sha512-uWiLn+9rKgIghUYmTHvXMR6MnyPULMe9Gv3bV537Fg4FH6CA6cn21WMjKss2Qb98LUhT847tKfnRGG3FhSOgUQ==}
     engines: {node: '>=14.17'}
     peerDependencies:
       postcss: ^8.4.21
     dependencies:
-      postcss: 8.4.35
+      postcss: 8.4.38
       typescript: 5.4.3
     dev: true
 
@@ -4442,15 +4436,6 @@ packages:
       picocolors: 1.0.0
       source-map-js: 1.0.2
     dev: false
-
-  /postcss@8.4.35:
-    resolution: {integrity: sha512-u5U8qYpBCpN13BsiEB0CbR1Hhh4Gc0zLFuedrHJKMctHCHAGrMdG0PRM/KErzAL3CU6/eckEtmHNB3x6e3c0vA==}
-    engines: {node: ^10 || ^12 || >=14}
-    dependencies:
-      nanoid: 3.3.7
-      picocolors: 1.0.0
-      source-map-js: 1.0.2
-    dev: true
 
   /postcss@8.4.38:
     resolution: {integrity: sha512-Wglpdk03BSfXkHoQa3b/oulrotAkwrlLDRSOb9D0bN86FdRyE9lppSp33aHNPgBa0JKCoB+drFLZkQoRRYae5A==}
@@ -5129,7 +5114,7 @@ packages:
       stylelint-scss: 6.1.0(stylelint@16.3.1)
     dev: true
 
-  /stylelint-config-recommended-scss@14.0.0(postcss@8.4.35)(stylelint@16.3.1):
+  /stylelint-config-recommended-scss@14.0.0(postcss@8.4.38)(stylelint@16.3.1):
     resolution: {integrity: sha512-HDvpoOAQ1RpF+sPbDOT2Q2/YrBDEJDnUymmVmZ7mMCeNiFSdhRdyGEimBkz06wsN+HaFwUh249gDR+I9JR7Onw==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
@@ -5139,8 +5124,8 @@ packages:
       postcss:
         optional: true
     dependencies:
-      postcss: 8.4.35
-      postcss-scss: 4.0.9(postcss@8.4.35)
+      postcss: 8.4.38
+      postcss-scss: 4.0.9(postcss@8.4.38)
       stylelint: 16.3.1(typescript@5.4.3)
       stylelint-config-recommended: 14.0.0(stylelint@16.3.1)
       stylelint-scss: 6.1.0(stylelint@16.3.1)
@@ -5155,17 +5140,17 @@ packages:
       stylelint: 16.3.1(typescript@5.4.3)
     dev: true
 
-  /stylelint-config-upleveled@1.1.0(postcss@8.4.35)(stylelint@16.3.1):
+  /stylelint-config-upleveled@1.1.0(postcss@8.4.38)(stylelint@16.3.1):
     resolution: {integrity: sha512-EkdNnCcid4iBajNlLjEP1QZepo+smltDY5Bc/ThVJk6qX/NyMdvffiA2jYVekNwKoG13MSqM9+Ywj19jceWLKQ==}
     engines: {node: '>=20.9.0'}
     peerDependencies:
       stylelint: ^16.2.1
     dependencies:
-      postcss-styled-syntax: 0.6.4(postcss@8.4.35)
+      postcss-styled-syntax: 0.6.4(postcss@8.4.38)
       stylelint: 16.3.1(typescript@5.4.3)
       stylelint-config-css-modules: 4.4.0(stylelint@16.3.1)
       stylelint-config-recommended: 14.0.0(stylelint@16.3.1)
-      stylelint-config-recommended-scss: 14.0.0(postcss@8.4.35)(stylelint@16.3.1)
+      stylelint-config-recommended-scss: 14.0.0(postcss@8.4.38)(stylelint@16.3.1)
     transitivePeerDependencies:
       - postcss
     dev: true
