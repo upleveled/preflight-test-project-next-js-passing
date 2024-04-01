@@ -32,6 +32,7 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
+      - run: node db.js
       - run: pnpm migrate up
       # Also generates next-env.d.ts, required for tsc
       - name: Build Next.js app
