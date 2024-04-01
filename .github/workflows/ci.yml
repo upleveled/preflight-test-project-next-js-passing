@@ -23,7 +23,7 @@ jobs:
         run: |
           sudo -u postgres createdb --owner=$PGUSERNAME $PGDATABASE
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v3
         with:
           version: 'latest'
 
