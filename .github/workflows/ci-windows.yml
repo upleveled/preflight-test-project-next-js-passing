@@ -35,7 +35,8 @@ jobs:
       - name: psql
         # shell: pwsh
         run: |
-          & psql -U preflight_test_project_next_js_passing -d preflight_test_project_next_js_passing --command 'SELECT 2';
+          # with localhost host
+          & psql -h localhost -U preflight_test_project_next_js_passing -d preflight_test_project_next_js_passing --command 'SELECT 2';
       - run: node db.js
       - run: pnpm migrate up
       # Also generates next-env.d.ts, required for tsc
