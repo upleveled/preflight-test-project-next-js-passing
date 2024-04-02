@@ -32,7 +32,7 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
-      - run: psql -U preflight_test_project_next_js_passing -d preflight_test_project_next_js_passing -c 'SELECT 2'
+      - run: psql -U preflight_test_project_next_js_passing -d preflight_test_project_next_js_passing -c 'SELECT 2;'
       - run: node db.js
       - run: pnpm migrate up
       # Also generates next-env.d.ts, required for tsc
