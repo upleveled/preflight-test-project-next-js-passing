@@ -17,21 +17,21 @@ jobs:
           username: ${{ env.PGUSERNAME }}
           password: ${{ env.PGPASSWORD }}
           database: ${{ env.PGDATABASE }}
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v3
-        with:
-          version: 'latest'
+      # - uses: actions/checkout@v4
+      # - uses: pnpm/action-setup@v3
+      #   with:
+      #     version: 'latest'
 
-      # Use the official setup-node action (sets up Node.js):
-      # https://github.com/actions/setup-node
-      - name: Use Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 'lts/*'
-          cache: 'pnpm'
+      # # Use the official setup-node action (sets up Node.js):
+      # # https://github.com/actions/setup-node
+      # - name: Use Node.js
+      #   uses: actions/setup-node@v4
+      #   with:
+      #     node-version: 'lts/*'
+      #     cache: 'pnpm'
 
-      - name: Install dependencies
-        run: pnpm install
+      # - name: Install dependencies
+      #   run: pnpm install
       - name: psql
         # shell: pwsh
         run: |
