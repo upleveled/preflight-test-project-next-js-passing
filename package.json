@@ -23,12 +23,10 @@
     "tsx": "4.7.1"
   },
   "devDependencies": {
-    "@ts-safeql/eslint-plugin": "2.0.3",
     "@types/node": "20.12.2",
     "@types/react": "18.2.74",
     "@types/react-dom": "18.2.23",
     "eslint-config-upleveled": "7.8.3",
-    "libpg-query": "16.1.0",
     "prettier": "^3.2.5",
     "prettier-plugin-embed": "^0.4.0",
     "prettier-plugin-sql": "^0.18.0",
