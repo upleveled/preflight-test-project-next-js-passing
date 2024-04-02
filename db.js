@@ -5,6 +5,16 @@ import postgres from 'postgres';
 // setEnvironmentVariables();
 
 // const sql = postgres();
+console.log(
+  'PGHOST',
+  process.env.PGHOST,
+  'PGUSERNAME',
+  process.env.PGUSERNAME,
+  'PGPASSWORD',
+  process.env.PGPASSWORD,
+  'PGDATABASE',
+  process.env.PGDATABASE,
+);
 const sql = postgres(
   'postgres://preflight_test_project_next_js_passing:preflight_test_project_next_js_passing@localhost:5432/preflight_test_project_next_js_passing',
 );
