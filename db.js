@@ -1,9 +1,13 @@
 import postgres from 'postgres';
-import { setEnvironmentVariables } from './util/config.js';
 
-setEnvironmentVariables();
+// import { setEnvironmentVariables } from './util/config.js';
 
-const sql = postgres();
+// setEnvironmentVariables();
+
+// const sql = postgres();
+const sql = postgres(
+  'postgres://preflight_test_project_next_js_passing:preflight_test_project_next_js_passing@localhost:5432/preflight_test_project_next_js_passing',
+);
 // 'postgres://preflight_test_project_next_js_passing:preflight_test_project_next_js_passing@localhost:5432/preflight_test_project_next_js_passing',
 
 console.log(
