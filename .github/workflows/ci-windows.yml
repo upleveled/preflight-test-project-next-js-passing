@@ -38,7 +38,6 @@ jobs:
         run: |
           which psql
           psql -V
-          PGPASSWORD=postgres psql -a --echo-errors -h localhost -U postgres -d postgres --command 'SELECT 2'
           PGPASSWORD=preflight_test_project_next_js_passing psql -a --echo-errors -h localhost -U preflight_test_project_next_js_passing -d preflight_test_project_next_js_passing --command 'SELECT 2'
       - run: node db.js
       - run: pnpm migrate up
