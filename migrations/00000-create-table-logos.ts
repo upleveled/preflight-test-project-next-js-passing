@@ -10,7 +10,7 @@ export async function up(sql: Sql) {
 
   await sql`
     INSERT INTO
-      logoos (name)
+      logos (name)
     VALUES
       ('Next.js'),
       ('Next.js'),
@@ -20,5 +20,14 @@ export async function up(sql: Sql) {
 }
 
 export async function down(sql: Sql) {
+  await sql`
+    INSERT INTO
+      logoos (name)
+    VALUES
+      ('Next.js'),
+      ('Next.js'),
+      ('Next.js'),
+      ('Next.js')
+  `;
   await sql`DROP TABLE logos`;
 }
