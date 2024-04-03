@@ -47,12 +47,6 @@ jobs:
 
           echo "Creating database..."
           createdb --owner="$PGUSERNAME" --username="postgres" "$PGDATABASE"
-      # - name: Create database user
-      #   run: |
-      #     sudo -u postgres psql --command="CREATE USER $PGUSERNAME PASSWORD '$PGPASSWORD'" --command="\du"
-      # - name: Create database and allow user
-      #   run: |
-      #     sudo -u postgres createdb --owner=$PGUSERNAME $PGDATABASE
 
       # Avoid CRLF in Windows tests, which cause problems with Prettier:
       # https://github.com/upleveled/preflight/runs/1824397400
