@@ -17,6 +17,7 @@ jobs:
         run: |
           # echo "$(pg_config --bindir)" >> $GITHUB_PATH
           export PGDATA="$RUNNER_TEMP/pgdata"
+          mkdir -p $PGDATA
           pg_ctl start
           # sudo systemctl start postgresql.service
           # pg_isready
