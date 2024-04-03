@@ -41,7 +41,7 @@ jobs:
           echo "checking if ready..."
           pg_isready --username="$PGUSERNAME"
           echo "creating database..."
-          createdb --owner="$PGUSERNAME" "$PGDATABASE"
+          createdb --owner="$PGUSERNAME" --username="$PGUSERNAME" "$PGDATABASE"
           echo "creating user..."
           psql --host "$PGHOST" --command="CREATE USER $PGUSERNAME PASSWORD '$PGPASSWORD'" --command="\du"
           psql --host "$PGHOST" --command="GRANT ALL PRIVILEGES ON DATABASE $PGDATABASE TO $PGUSERNAME" --command="\l"
