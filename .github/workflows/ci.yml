@@ -27,7 +27,7 @@ jobs:
         shell: bash
         run: |
           if [ "$RUNNER_OS" == "Windows" ]; then
-            export PGHOST="$(cygpath --unix "$RUNNER_TEMP")\postgres"
+            export PGHOST="$(cygpath --unix "$RUNNER_TEMP")/postgres"
           else
             export PGHOST="$RUNNER_TEMP/postgres"
           fi
