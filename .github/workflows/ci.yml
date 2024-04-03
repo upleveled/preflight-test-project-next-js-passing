@@ -41,10 +41,10 @@ jobs:
           echo "checking if ready..."
           pg_isready --username="postgres" --dbname="postgres"
           echo "creating user..."
-          psql --host "$PGHOST" --dbname="postgres" --command="CREATE USER $PGUSERNAME PASSWORD '$PGPASSWORD'" --command="\du"
+          psql --host "$PGHOST" --username="postgres" --dbname="postgres" --command="CREATE USER $PGUSERNAME PASSWORD '$PGPASSWORD'" --command="\du"
           # psql --host "$PGHOST" --command="GRANT ALL PRIVILEGES ON DATABASE $PGDATABASE TO $PGUSERNAME" --command="\l"
           echo "creating database..."
-          createdb --owner="$PGUSERNAME" "$PGDATABASE"
+          createdb --owner="$PGUSERNAME" --username="postgres" "$PGDATABASE"
       # - name: Create database user
       #   run: |
       #     sudo -u postgres psql --command="CREATE USER $PGUSERNAME PASSWORD '$PGPASSWORD'" --command="\du"
