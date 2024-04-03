@@ -42,7 +42,7 @@ jobs:
           pg_isready
           echo "creating user..."
           psql --host "$PGHOST" --command="CREATE USER $PGUSERNAME PASSWORD '$PGPASSWORD'" --command="\du"
-          psql --host "$PGHOST" --command="GRANT ALL PRIVILEGES ON DATABASE $PGDATABASE TO $PGUSERNAME" --command="\l"
+          # psql --host "$PGHOST" --command="GRANT ALL PRIVILEGES ON DATABASE $PGDATABASE TO $PGUSERNAME" --command="\l"
           echo "creating database..."
           createdb --owner="$PGUSERNAME" "$PGDATABASE"
       # - name: Create database user
