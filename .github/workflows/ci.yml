@@ -25,6 +25,7 @@ jobs:
           pg_ctl start
           # sudo systemctl start postgresql.service
           pg_isready
+          sudo -u postgres psql --command="CREATE USER $PGUSERNAME PASSWORD '$PGPASSWORD'" --command="\du"
       - name: Create database user
         run: |
           sudo -u postgres psql --command="CREATE USER $PGUSERNAME PASSWORD '$PGPASSWORD'" --command="\du"
