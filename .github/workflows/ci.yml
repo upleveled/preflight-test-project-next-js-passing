@@ -26,7 +26,7 @@ jobs:
       - name: Start preinstalled PostgreSQL
         shell: bash
         run: |
-          export PGHOST="${RUNNER_TEMP//\\//}/postgres"
+          export PGHOST="$(cygpath -u "$RUNNER_TEMP")/postgres"
           export PGDATA="$PGHOST/pgdata"
           mkdir -p "$PGDATA"
           initdb -D "$PGDATA"
