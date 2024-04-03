@@ -26,6 +26,7 @@ jobs:
       - name: Start preinstalled PostgreSQL
         shell: bash
         run: |
+          # Convert backslashes to forward slashes in RUNNER_TEMP for Windows Git Bash
           export PGHOST="${RUNNER_TEMP//\\//}/postgres"
           export PGDATA="$PGHOST/pgdata"
           mkdir -p "$PGDATA"
@@ -33,17 +34,18 @@ jobs:
           # initdb requires file for password in non-interactive mode
           export PWFILE="$RUNNER_TEMP/pwfile"
           echo 'postgres' > $PWFILE
-
           initdb --pgdata="$PGDATA" --username="postgres" --pwfile="$PWFILE"
+
           echo "unix_socket_directories = '$PGHOST'" >> "$PGDATA/postgresql.conf"
           pg_ctl start
-          # sudo systemctl start postgresql.service
-          echo "checking if ready..."
+
+          echo "Checking if ready..."
           pg_isready --username="postgres" --dbname="postgres"
-          echo "creating user..."
+
+          echo "Creating user..."
           psql --host "$PGHOST" --username="postgres" --dbname="postgres" --command="CREATE USER $PGUSERNAME PASSWORD '$PGPASSWORD'" --command="\du"
-          # psql --host "$PGHOST" --command="GRANT ALL PRIVILEGES ON DATABASE $PGDATABASE TO $PGUSERNAME" --command="\l"
-          echo "creating database..."
+
+          echo "Creating database..."
           createdb --owner="$PGUSERNAME" --username="postgres" "$PGDATABASE"
       # - name: Create database user
       #   run: |
