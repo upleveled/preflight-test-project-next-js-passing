@@ -40,11 +40,11 @@ jobs:
           # sudo systemctl start postgresql.service
           echo "checking if ready..."
           pg_isready
-          echo "creating database..."
-          createdb --owner="$PGUSERNAME" "$PGDATABASE"
           echo "creating user..."
           psql --host "$PGHOST" --command="CREATE USER $PGUSERNAME PASSWORD '$PGPASSWORD'" --command="\du"
           psql --host "$PGHOST" --command="GRANT ALL PRIVILEGES ON DATABASE $PGDATABASE TO $PGUSERNAME" --command="\l"
+          echo "creating database..."
+          createdb --owner="$PGUSERNAME" "$PGDATABASE"
       # - name: Create database user
       #   run: |
       #     sudo -u postgres psql --command="CREATE USER $PGUSERNAME PASSWORD '$PGPASSWORD'" --command="\du"
