@@ -32,16 +32,16 @@ jobs:
 
           # initdb requires file for password in non-interactive mode
           export PWFILE="$RUNNER_TEMP/pwfile"
-          echo 'runner' > $PWFILE
+          echo 'postgres' > $PWFILE
 
-          initdb --pgdata="$PGDATA" --username="runner" --pwfile="$PWFILE"
+          initdb --pgdata="$PGDATA" --username="postgres" --pwfile="$PWFILE"
           echo "unix_socket_directories = '$PGHOST'" >> "$PGDATA/postgresql.conf"
           pg_ctl start
           # sudo systemctl start postgresql.service
           echo "checking if ready..."
-          pg_isready
+          pg_isready --username="postgres" --dbname="postgres"
           echo "creating user..."
-          psql --host "$PGHOST" --command="CREATE USER $PGUSERNAME PASSWORD '$PGPASSWORD'" --command="\du"
+          psql --host "$PGHOST" --dbname="postgres" --command="CREATE USER $PGUSERNAME PASSWORD '$PGPASSWORD'" --command="\du"
           # psql --host "$PGHOST" --command="GRANT ALL PRIVILEGES ON DATABASE $PGDATABASE TO $PGUSERNAME" --command="\l"
           echo "creating database..."
           createdb --owner="$PGUSERNAME" "$PGDATABASE"
