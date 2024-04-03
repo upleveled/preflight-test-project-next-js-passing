@@ -26,12 +26,13 @@ jobs:
       - name: Start preinstalled PostgreSQL
         shell: bash
         run: |
+          echo "Initializing database..."
+
           # Convert backslashes to forward slashes in RUNNER_TEMP for Windows Git Bash
           export PGHOST="${RUNNER_TEMP//\\//}/postgres"
           export PGDATA="$PGHOST/pgdata"
           mkdir -p "$PGDATA"
 
-          echo "Initializing database..."
           # initdb requires file for password in non-interactive mode
           export PWFILE="$RUNNER_TEMP/pwfile"
           echo 'postgres' > $PWFILE
