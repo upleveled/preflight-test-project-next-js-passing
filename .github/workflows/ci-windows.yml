@@ -30,6 +30,11 @@ jobs:
           node-version: 'lts/*'
           cache: 'pnpm'
 
+      # Avoid Node.js bug with long filenames on Windows
+      # https://github.com/nodejs/node/issues/50753
+      - run: echo 'node-linker=hoisted' > ./.npmrc
+        shell: bash
+
       - name: Install dependencies
         run: pnpm install
       - name: psql
