@@ -26,7 +26,11 @@ jobs:
       - name: Start preinstalled PostgreSQL
         shell: bash
         run: |
-          export PGHOST="$(cygpath -u "$RUNNER_TEMP")/postgres"
+          if [ "$RUNNER_OS" == "Windows" ]; then
+            export PGHOST="$(cygpath --unix "$RUNNER_TEMP")\postgres"
+          else
+            export PGHOST="$RUNNER_TEMP/postgres"
+          fi
           export PGDATA="$PGHOST/pgdata"
           mkdir -p "$PGDATA"
           initdb -D "$PGDATA"
