@@ -10,7 +10,7 @@ export async function up(sql: Sql) {
 
   await sql`
     INSERT INTO
-      logos (name)
+      logoos (name)
     VALUES
       ('Next.js'),
       ('Next.js'),
