@@ -32,9 +32,9 @@ jobs:
 
           # initdb requires file for password in non-interactive mode
           export PWFILE="$RUNNER_TEMP/pwfile"
-          echo 'postgres' > $PWFILE
+          echo 'runner' > $PWFILE
 
-          initdb --pgdata="$PGDATA" --username="postgres" --pwfile="$PWFILE"
+          initdb --pgdata="$PGDATA" --username="runner" --pwfile="$PWFILE"
           echo "unix_socket_directories = '$PGHOST'" >> "$PGDATA/postgresql.conf"
           pg_ctl start
           # sudo systemctl start postgresql.service
