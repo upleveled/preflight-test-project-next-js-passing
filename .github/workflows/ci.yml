@@ -33,8 +33,11 @@ jobs:
           echo "unix_socket_directories = '$PGHOST'" >> "$PGDATA/postgresql.conf"
           pg_ctl start
           # sudo systemctl start postgresql.service
+          echo "checking if ready..."
           pg_isready
+          echo "creating database..."
           createdb $PGDATABASE
+          echo "creating user..."
           psql --host "$PGHOST" --command="CREATE USER $PGUSERNAME PASSWORD '$PGPASSWORD'" --command="\du"
           psql --host "$PGHOST" --command="GRANT ALL PRIVILEGES ON DATABASE $PGDATABASE TO $PGUSERNAME" --command="\l"
       # - name: Create database user
