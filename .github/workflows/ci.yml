@@ -4,7 +4,10 @@ on: push
 jobs:
   ci:
     name: CI
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest, macos-latest, ubuntu-latest]
     timeout-minutes: 15
     env:
       PGHOST: localhost
@@ -12,41 +15,94 @@ jobs:
       PGUSERNAME: preflight_test_project_next_js_passing
       PGPASSWORD: preflight_test_project_next_js_passing
     steps:
-      - name: Start preinstalled PostgreSQL on Ubuntu
+      # Start preinstalled PostgreSQL database on Windows, macOS and Linux
+      # https://github.com/karlhorky/github-tricks/#github-actions-start-preinstalled-postgresql-database-on-windows-macos-and-linux
+      - name: Add PostgreSQL binaries to PATH
+        shell: bash
         run: |
-          sudo systemctl start postgresql.service
-          pg_isready
-      - name: Create database user
+          if [ "$RUNNER_OS" == "Windows" ]; then
+            echo "$PGBIN" >> $GITHUB_PATH
+          elif [ "$RUNNER_OS" == "Linux" ]; then
+            echo "$(pg_config --bindir)" >> $GITHUB_PATH
+          fi
+      - name: Start preinstalled PostgreSQL
+        shell: bash
         run: |
-          sudo -u postgres psql --command="CREATE USER $PGUSERNAME PASSWORD '$PGPASSWORD'" --command="\du"
-      - name: Create database and allow user
-        run: |
-          sudo -u postgres createdb --owner=$PGUSERNAME $PGDATABASE
+          echo "Initializing database cluster..."
+
+          # Convert backslashes to forward slashes in RUNNER_TEMP for Windows Git Bash
+          export PGHOST="${RUNNER_TEMP//\\//}/postgres"
+          export PGDATA="$PGHOST/pgdata"
+          mkdir -p "$PGDATA"
+
+          # initdb requires file for password in non-interactive mode
+          export PWFILE="$RUNNER_TEMP/pwfile"
+          echo "postgres" > "$PWFILE"
+          initdb --pgdata="$PGDATA" --username="postgres" --pwfile="$PWFILE"
+
+          echo "Starting PostgreSQL..."
+          echo "unix_socket_directories = '$PGHOST'" >> "$PGDATA/postgresql.conf"
+          pg_ctl start
+
+          echo "Creating user..."
+          psql --host "$PGHOST" --username="postgres" --dbname="postgres" --command="CREATE USER $PGUSERNAME PASSWORD '$PGPASSWORD'" --command="\du"
+
+          echo "Creating database..."
+          createdb --owner="$PGUSERNAME" --username="postgres" "$PGDATABASE"
+
+      # Avoid CRLF in Windows tests, which cause problems with Prettier:
+      # https://github.com/upleveled/preflight/runs/1824397400
+      #
+      # Suggested here: https://github.com/actions/checkout/issues/250#issuecomment-635267458
+      # Example repo: https://github.com/ghdl/ghdl/blob/aa63b5efcd2be66acc26443032df2b251e4b1a7a/.github/workflows/Test.yml#L230-L232
+      - name: Use LF instead of CRLF for clone
+        run: git config --global core.autocrlf input
+
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v3
         with:
-          version: 'latest'
+          # Use pnpm v9 beta for Python 3.12 problem with node-gyp
+          # https://github.com/pnpm/pnpm/issues/2135#issuecomment-2028118254
+          #
+          # TODO: Switch back to 'latest' once pnpm v9 released:
+          # version: 'latest'
+          version: '9.0.0-beta.2'
 
-      # Use the official setup-node action (sets up Node.js):
-      # https://github.com/actions/setup-node
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 'lts/*'
           cache: 'pnpm'
 
+      # Avoid Node.js bug with long filenames on Windows
+      # https://github.com/nodejs/node/issues/50753
+      - run: echo 'node-linker=hoisted' > ./.npmrc
+        shell: bash
+        if: runner.os == 'Windows'
+
       - name: Install dependencies
         run: pnpm install
+
+      # Remove .npmrc file again on Windows
+      # https://github.com/nodejs/node/issues/50753
+      - run: rm .npmrc
+        if: runner.os == 'Windows'
+
       - run: pnpm migrate up
+
       # Also generates next-env.d.ts, required for tsc
       - name: Build Next.js app
         run: pnpm build
+
       - name: Run TypeScript Compiler
         run: pnpm tsc
+
       - name: Run ESLint
         run: pnpm eslint . --max-warnings 0
+
       - name: Run Stylelint
         run: pnpm stylelint '**/*.{css,scss,less,js,tsx}'
+
       - name: Install and run Preflight
         run: |
           pnpm add --global @upleveled/preflight
