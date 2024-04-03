@@ -25,14 +25,14 @@ jobs:
           pg_ctl start
           # sudo systemctl start postgresql.service
           pg_isready
-          createdb --owner=$PGUSERNAME $PGDATABASE
-          psql --host "$PGHOST" --command="CREATE USER $PGUSERNAME PASSWORD '$PGPASSWORD'" --command="\du"
-      - name: Create database user
-        run: |
-          sudo -u postgres psql --command="CREATE USER $PGUSERNAME PASSWORD '$PGPASSWORD'" --command="\du"
-      - name: Create database and allow user
-        run: |
-          sudo -u postgres createdb --owner=$PGUSERNAME $PGDATABASE
+      #     createdb --owner=$PGUSERNAME $PGDATABASE
+      #     psql --host "$PGHOST" --command="CREATE USER $PGUSERNAME PASSWORD '$PGPASSWORD'" --command="\du"
+      # - name: Create database user
+      #   run: |
+      #     sudo -u postgres psql --command="CREATE USER $PGUSERNAME PASSWORD '$PGPASSWORD'" --command="\du"
+      # - name: Create database and allow user
+      #   run: |
+      #     sudo -u postgres createdb --owner=$PGUSERNAME $PGDATABASE
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v3
         with:
