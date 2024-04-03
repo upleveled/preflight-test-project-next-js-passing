@@ -15,11 +15,10 @@ jobs:
       PGUSERNAME: preflight_test_project_next_js_passing
       PGPASSWORD: preflight_test_project_next_js_passing
     steps:
-      - run: echo "$(pg_config --bindir)" >> $GITHUB_PATH
+      - run: echo "$PGBIN" >> $GITHUB_PATH
       - name: Start preinstalled PostgreSQL
         shell: bash
         run: |
-          # echo "$(pg_config --bindir)" >> $GITHUB_PATH
           export PGHOST="$RUNNER_TEMP/postgres"
           export PGDATA="$PGHOST/pgdata"
           mkdir -p "$PGDATA"
