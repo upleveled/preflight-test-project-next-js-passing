@@ -28,7 +28,7 @@ jobs:
         run: |
           export PGHOST="${RUNNER_TEMP//\\//}/postgres"
           export PGDATA="$PGHOST/pgdata"
-          mkdir -p "$PGDATA"
+          mkdir --parents "$PGDATA"
 
           # initdb requires file for password in non-interactive mode
           export PWFILE="$RUNNER_TEMP/pwfile"
