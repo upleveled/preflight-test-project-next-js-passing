@@ -12,9 +12,10 @@ jobs:
       PGUSERNAME: preflight_test_project_next_js_passing
       PGPASSWORD: preflight_test_project_next_js_passing
     steps:
+      - run: echo "$(pg_config --bindir)" >> $GITHUB_PATH
       - name: Start preinstalled PostgreSQL on Ubuntu
         run: |
-          echo "$(pg_config --bindir)" >> $GITHUB_PATH
+          # echo "$(pg_config --bindir)" >> $GITHUB_PATH
           export PGDATA="$RUNNER_TEMP/pgdata"
           pg_ctl start
           # sudo systemctl start postgresql.service
