@@ -17,6 +17,23 @@ jobs:
           username: ${{ env.PGUSERNAME }}
           password: ${{ env.PGPASSWORD }}
           database: ${{ env.PGDATABASE }}
+
+      - name: Start preinstalled PostgreSQL on Windows, macOS, Ubuntu
+        shell: bash
+        run: |
+          # echo "$(pg_config --bindir)" >> $GITHUB_PATH
+          export PGHOST="$RUNNER_TEMP/postgres"
+          export PGDATA="$PGHOST/pgdata"
+          mkdir -p "$PGDATA"
+          initdb -D "$PGDATA"
+          echo "unix_socket_directories = '$PGHOST'" >> "$PGDATA/postgresql.conf"
+          pg_ctl start
+          # sudo systemctl start postgresql.service
+          pg_isready
+          createdb $PGDATABASE
+          psql --host "$PGHOST" --command="CREATE USER $PGUSERNAME PASSWORD '$PGPASSWORD'" --command="\du"
+          psql --host "$PGHOST" --command="GRANT ALL PRIVILEGES ON DATABASE $PGDATABASE TO $PGUSERNAME" --command="\l"
+
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v3
         with:
