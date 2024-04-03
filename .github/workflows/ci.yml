@@ -39,7 +39,7 @@ jobs:
           pg_ctl start
           # sudo systemctl start postgresql.service
           echo "checking if ready..."
-          pg_isready
+          pg_isready --username="$PGUSERNAME"
           echo "creating database..."
           createdb --owner="$PGUSERNAME" "$PGDATABASE"
           echo "creating user..."
