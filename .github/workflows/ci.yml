@@ -20,6 +20,7 @@ jobs:
           export PGDATA="$RUNNER_TEMP/pgdata"
           mkdir -p "$PGDATA"
           initdb -D "$PGDATA"
+          mkdir -p "$RUNNER_TEMP/pgsocket"
           echo "unix_socket_directories = '$RUNNER_TEMP/pgsocket'" >> "$PGDATA/postgresql.conf"
           pg_ctl start
           # sudo systemctl start postgresql.service
