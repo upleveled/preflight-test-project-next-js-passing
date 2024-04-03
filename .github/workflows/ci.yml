@@ -17,11 +17,11 @@ jobs:
         shell: bash
         run: |
           # echo "$(pg_config --bindir)" >> $GITHUB_PATH
-          export PGDATA="$RUNNER_TEMP/pgdata"
+          export PGHOST="$RUNNER_TEMP/postgres"
+          export PGDATA="$PGHOST/pgdata"
           mkdir -p "$PGDATA"
           initdb -D "$PGDATA"
-          mkdir -p "$RUNNER_TEMP/pgsocket"
-          echo "unix_socket_directories = '$RUNNER_TEMP/pgsocket'" >> "$PGDATA/postgresql.conf"
+          echo "unix_socket_directories = '$PGHOST'" >> "$PGDATA/postgresql.conf"
           pg_ctl start
           # sudo systemctl start postgresql.service
           pg_isready
