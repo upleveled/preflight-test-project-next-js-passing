@@ -15,6 +15,8 @@ jobs:
       PGUSERNAME: preflight_test_project_next_js_passing
       PGPASSWORD: preflight_test_project_next_js_passing
     steps:
+      # Start preinstalled PostgreSQL database on Windows, macOS and Linux
+      # https://github.com/karlhorky/github-tricks/#github-actions-start-preinstalled-postgresql-database-on-windows-macos-and-linux
       - name: Add PostgreSQL binaries to PATH
         shell: bash
         run: |
@@ -23,7 +25,6 @@ jobs:
           elif [ "$RUNNER_OS" == "Linux" ]; then
             echo "$(pg_config --bindir)" >> $GITHUB_PATH
           fi
-
       - name: Start preinstalled PostgreSQL
         shell: bash
         run: |
@@ -62,6 +63,9 @@ jobs:
         with:
           # Use pnpm v9 beta for Python 3.12 problem with node-gyp
           # https://github.com/pnpm/pnpm/issues/2135#issuecomment-2028118254
+          #
+          # TODO: Switch back to 'latest' once pnpm v9 released:
+          # version: 'latest'
           version: '9.0.0-beta.2'
 
       - name: Use Node.js
