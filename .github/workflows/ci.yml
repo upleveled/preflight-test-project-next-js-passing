@@ -81,7 +81,6 @@ jobs:
       # Remove .npmrc file again on Windows
       # https://github.com/nodejs/node/issues/50753
       - run: rm .npmrc
-        shell: bash
         if: runner.os == 'Windows'
 
       - run: pnpm migrate up
