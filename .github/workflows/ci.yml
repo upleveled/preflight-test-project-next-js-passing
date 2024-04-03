@@ -19,7 +19,7 @@ jobs:
           export PGDATA="$RUNNER_TEMP/pgdata"
           mkdir -p "$PGDATA"
           initdb -D "$PGDATA"
-          sudo -u postgres "$PGBIN/pg_ctl" start
+          sudo -n -u postgres "$PGBIN/pg_ctl" start
           # sudo systemctl start postgresql.service
           # pg_isready
       - name: Create database user
