@@ -28,7 +28,7 @@ const config = [
         {
           connections: [
             {
-              databaseUrl: `postgres://safeql:safeql@localhost:5432/safeql`,
+              databaseUrl: `postgres://preflight_test_project_next_js_passing:preflight_test_project_next_js_passing@localhost:5432/preflight_test_project_next_js_passing`,
               targets: [
                 {
                   tag: 'sql',
