@@ -20,5 +20,14 @@ export async function up(sql: Sql) {
 }
 
 export async function down(sql: Sql) {
+  await sql`
+    INSERT INTO
+      loogos (name)
+    VALUES
+      ('Next.js'),
+      ('Next.js'),
+      ('Next.js'),
+      ('Next.js')
+  `;
   await sql`DROP TABLE logos`;
 }
