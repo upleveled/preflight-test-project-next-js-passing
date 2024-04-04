@@ -106,4 +106,3 @@ jobs:
       - name: Install and run Preflight
         run: |
           pnpm add --global @upleveled/preflight
-          preflight
