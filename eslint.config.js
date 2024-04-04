@@ -7,7 +7,7 @@ import typescriptParser from '@typescript-eslint/parser';
 /** @type {import('@typescript-eslint/utils/ts-eslint').FlatConfig.ConfigArray} */
 const config = [
   {
-    files: ['**/*.js', '**/*.jsx', '**/*.ts'],
+    files: ['migrations/*.ts'],
     languageOptions: {
       parser: typescriptParser,
       parserOptions: {
