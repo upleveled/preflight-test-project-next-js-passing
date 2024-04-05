@@ -2,9 +2,20 @@ import safeql from '@ts-safeql/eslint-plugin';
 import eslintTypescript from '@typescript-eslint/eslint-plugin';
 import typescriptParser from '@typescript-eslint/parser';
 
+if (
+  'postgres' in
+  ((
+    await import(`${process.cwd()}/package.json`, {
+      assert: { type: 'json' },
+    })
+  ).default.dependencies || {})
+) {
+}
 (await import('dotenv-safe')).config();
 
-/** @type {import('@typescript-eslint/utils/ts-eslint').FlatConfig.ConfigArray} */
+/** @type
+ * {import('@typescript-eslint/utils/ts-eslint').FlatConfig.ConfigArray}
+ * */
 const config = [
   {
     files: ['migrations/*.ts'],
