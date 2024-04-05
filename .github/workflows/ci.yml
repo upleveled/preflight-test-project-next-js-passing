@@ -7,7 +7,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [windows-latest]
+        os: [windows-latest, macos-latest, ubuntu-latest]
     timeout-minutes: 15
     env:
       PGHOST: localhost
@@ -106,3 +106,4 @@ jobs:
       - name: Install and run Preflight
         run: |
           pnpm add --global @upleveled/preflight
+          preflight
