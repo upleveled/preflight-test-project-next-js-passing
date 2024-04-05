@@ -42,6 +42,9 @@ importers:
       '@ts-safeql/eslint-plugin':
         specifier: 2.0.3
         version: 2.0.3(eslint@8.57.0)(libpg-query@16.1.0(encoding@0.1.13))(typescript@5.4.3)
+      '@types/dotenv-safe':
+        specifier: ^8.1.6
+        version: 8.1.6
       '@types/node':
         specifier: 20.12.3
         version: 20.12.3
@@ -759,6 +762,9 @@ packages:
   '@ts-safeql/test-utils@0.0.12':
     resolution: {integrity: sha512-Hhnkf9r5L2QbOhTKo7BSiezjCNN9/a2NocTazgfPbXLyUxmc5soJVWPuTUxJTP8sucMgsTwRYVAyP25XM24p1g==}
 
+  '@types/dotenv-safe@8.1.6':
+    resolution: {integrity: sha512-ftZXu3WGT6ALq+f98IX2gWriGMPds+0ku5h8kZewNpY47ua+Z+XNcin9apZ2kVd4B9LV1vMfUOyDf1/hhreR0Q==}
+
   '@types/eslint@8.56.6':
     resolution: {integrity: sha512-ymwc+qb1XkjT/gfoQwxIeHZ6ixH23A+tCT2ADSA/DPVKzAjwYkTXBMCQ/f6fe4wEa85Lhp26VPeUxI7wMhAi7A==}
 
@@ -1295,6 +1301,10 @@ packages:
   dotenv@16.4.5:
     resolution: {integrity: sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==}
     engines: {node: '>=12'}
+
+  dotenv@8.6.0:
+    resolution: {integrity: sha512-IrPdXQsk2BbzvCBGBOTmmSH5SodmqZNt4ERAZDmW4CT+tL8VtvinqywuANaFu4bOMWki16nqf0e4oC0QIaDr/g==}
+    engines: {node: '>=10'}
 
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
@@ -3645,6 +3655,11 @@ snapshots:
       pg-connection-string: 2.5.0
       postgres: 3.4.4
 
+  '@types/dotenv-safe@8.1.6':
+    dependencies:
+      '@types/node': 20.12.3
+      dotenv: 8.6.0
+
   '@types/eslint@8.56.6':
     dependencies:
       '@types/estree': 1.0.5
@@ -4257,6 +4272,8 @@ snapshots:
       dotenv: 16.4.5
 
   dotenv@16.4.5: {}
+
+  dotenv@8.6.0: {}
 
   eastasianwidth@0.2.0: {}
 
