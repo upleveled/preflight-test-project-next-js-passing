@@ -55,8 +55,8 @@ importers:
         specifier: 18.2.24
         version: 18.2.24
       eslint-config-upleveled:
-        specifier: 8.0.0
-        version: 8.0.0(@babel/core@7.24.0)(@types/eslint@8.56.6)(@types/node@20.12.4)(@types/react-dom@18.2.24)(@types/react@18.2.74)(eslint@8.57.0)(globals@14.0.0)(typescript@5.4.4)
+        specifier: 8.0.1
+        version: 8.0.1(@babel/core@7.24.0)(@types/eslint@8.56.6)(@types/node@20.12.4)(@types/react-dom@18.2.24)(@types/react@18.2.74)(eslint@8.57.0)(globals@14.0.0)(typescript@5.4.4)
       libpg-query:
         specifier: 16.1.0
         version: 16.1.0(encoding@0.1.13)
@@ -1394,8 +1394,8 @@ packages:
   eslint-config-flat-gitignore@0.1.5:
     resolution: {integrity: sha512-hEZLwuZjDBGDERA49c2q7vxc8sCGv8EdBp6PQYzGOMcHIgrfG9YOM6s/4jx24zhD+wnK9AI8mgN5RxSss5nClQ==}
 
-  eslint-config-upleveled@8.0.0:
-    resolution: {integrity: sha512-2XY9EvKAKpq2zgWrb2n1bILd7bLYjGWRQwEae6X2gaVdCSg8yeg/mGPUnnXWPH7kDEngPN+i9pVubjBiuibHUg==}
+  eslint-config-upleveled@8.0.1:
+    resolution: {integrity: sha512-SLVwgHkTDl0J1aLws9pIyO33u9MghFubX+Kp8cV3SmEcI0oblgwFPTwx+SyR1BweTalS+fxtRt/5iJEssbFhMg==}
     engines: {node: '>=20.9.0'}
     hasBin: true
     peerDependencies:
@@ -4456,7 +4456,7 @@ snapshots:
       find-up: 7.0.0
       parse-gitignore: 2.0.0
 
-  eslint-config-upleveled@8.0.0(@babel/core@7.24.0)(@types/eslint@8.56.6)(@types/node@20.12.4)(@types/react-dom@18.2.24)(@types/react@18.2.74)(eslint@8.57.0)(globals@14.0.0)(typescript@5.4.4):
+  eslint-config-upleveled@8.0.1(@babel/core@7.24.0)(@types/eslint@8.56.6)(@types/node@20.12.4)(@types/react-dom@18.2.24)(@types/react@18.2.74)(eslint@8.57.0)(globals@14.0.0)(typescript@5.4.4):
     dependencies:
       '@babel/eslint-parser': 7.24.1(@babel/core@7.24.0)(eslint@8.57.0)
       '@next/eslint-plugin-next': 14.1.4
