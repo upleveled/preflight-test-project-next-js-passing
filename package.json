@@ -17,25 +17,25 @@
     "postgres": "3.4.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sass": "1.72.0",
+    "sass": "1.74.1",
     "server-only": "0.0.1",
     "sharp": "0.33.3",
-    "tsx": "4.7.1"
+    "tsx": "4.7.2"
   },
   "devDependencies": {
     "@ts-safeql/eslint-plugin": "2.0.3",
     "@types/dotenv-safe": "8.1.6",
-    "@types/node": "20.12.3",
+    "@types/node": "20.12.4",
     "@types/react": "18.2.74",
-    "@types/react-dom": "18.2.23",
-    "eslint-config-upleveled": "8.0.0-1",
+    "@types/react-dom": "18.2.24",
+    "eslint-config-upleveled": "8.0.0",
     "libpg-query": "16.1.0",
     "prettier": "3.2.5",
     "prettier-plugin-embed": "0.4.15",
     "prettier-plugin-sql": "0.18.0",
     "stylelint": "16.3.1",
     "stylelint-config-upleveled": "1.1.1",
-    "typescript": "5.4.3"
+    "typescript": "5.4.4"
   },
   "engines": {
     "pnpm": ">=9.0.0-beta.2"
