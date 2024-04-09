@@ -46,8 +46,8 @@ importers:
         specifier: 8.1.6
         version: 8.1.6
       '@types/node':
-        specifier: 20.12.5
-        version: 20.12.5
+        specifier: 20.12.6
+        version: 20.12.6
       '@types/react':
         specifier: 18.2.75
         version: 18.2.75
@@ -56,7 +56,7 @@ importers:
         version: 18.2.24
       eslint-config-upleveled:
         specifier: 8.0.1
-        version: 8.0.1(@babel/core@7.24.0)(@types/eslint@8.56.6)(@types/node@20.12.5)(@types/react-dom@18.2.24)(@types/react@18.2.75)(eslint@8.57.0)(globals@14.0.0)(typescript@5.4.4)
+        version: 8.0.1(@babel/core@7.24.0)(@types/eslint@8.56.6)(@types/node@20.12.6)(@types/react-dom@18.2.24)(@types/react@18.2.75)(eslint@8.57.0)(globals@14.0.0)(typescript@5.4.4)
       libpg-query:
         specifier: 16.1.0
         version: 16.1.0(encoding@0.1.13)
@@ -777,8 +777,8 @@ packages:
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
 
-  '@types/node@20.12.5':
-    resolution: {integrity: sha512-BD+BjQ9LS/D8ST9p5uqBxghlN+S42iuNxjsUGjeZobe/ciXzk2qb1B6IXc6AnRLS+yFJRpN2IPEHMzwspfDJNw==}
+  '@types/node@20.12.6':
+    resolution: {integrity: sha512-3KurE8taB8GCvZBPngVbp0lk5CKi8M9f9k1rsADh0Evdz5SzJ+Q+Hx9uHoFGsLnLnd1xmkDQr2hVhlA0Mn0lKQ==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -3657,7 +3657,7 @@ snapshots:
 
   '@types/dotenv-safe@8.1.6':
     dependencies:
-      '@types/node': 20.12.5
+      '@types/node': 20.12.6
       dotenv: 8.6.0
 
   '@types/eslint@8.56.6':
@@ -3671,7 +3671,7 @@ snapshots:
 
   '@types/json5@0.0.29': {}
 
-  '@types/node@20.12.5':
+  '@types/node@20.12.6':
     dependencies:
       undici-types: 5.26.5
 
@@ -4456,12 +4456,12 @@ snapshots:
       find-up: 7.0.0
       parse-gitignore: 2.0.0
 
-  eslint-config-upleveled@8.0.1(@babel/core@7.24.0)(@types/eslint@8.56.6)(@types/node@20.12.5)(@types/react-dom@18.2.24)(@types/react@18.2.75)(eslint@8.57.0)(globals@14.0.0)(typescript@5.4.4):
+  eslint-config-upleveled@8.0.1(@babel/core@7.24.0)(@types/eslint@8.56.6)(@types/node@20.12.6)(@types/react-dom@18.2.24)(@types/react@18.2.75)(eslint@8.57.0)(globals@14.0.0)(typescript@5.4.4):
     dependencies:
       '@babel/eslint-parser': 7.24.1(@babel/core@7.24.0)(eslint@8.57.0)
       '@next/eslint-plugin-next': 14.1.4
       '@types/eslint': 8.56.6
-      '@types/node': 20.12.5
+      '@types/node': 20.12.6
       '@types/react': 18.2.75
       '@types/react-dom': 18.2.24
       '@typescript-eslint/eslint-plugin': 7.5.0(@typescript-eslint/parser@7.5.0(eslint@8.57.0)(typescript@5.4.4))(eslint@8.57.0)(typescript@5.4.4)
