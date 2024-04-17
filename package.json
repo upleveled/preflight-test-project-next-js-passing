@@ -13,11 +13,11 @@
   "dependencies": {
     "@upleveled/ley": "0.8.6",
     "dotenv-safe": "9.1.0",
-    "next": "14.1.4",
+    "next": "14.2.1",
     "postgres": "3.4.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sass": "1.74.1",
+    "sass": "1.75.0",
     "server-only": "0.0.1",
     "sharp": "0.33.3",
     "tsx": "4.7.2"
@@ -25,9 +25,9 @@
   "devDependencies": {
     "@ts-safeql/eslint-plugin": "2.0.3",
     "@types/dotenv-safe": "8.1.6",
-    "@types/node": "20.12.6",
-    "@types/react": "18.2.75",
-    "@types/react-dom": "18.2.24",
+    "@types/node": "20.12.7",
+    "@types/react": "18.2.79",
+    "@types/react-dom": "18.2.25",
     "eslint-config-upleveled": "8.0.1",
     "libpg-query": "16.1.0",
     "prettier": "3.2.5",
@@ -35,6 +35,6 @@
     "prettier-plugin-sql": "0.18.0",
     "stylelint": "16.3.1",
     "stylelint-config-upleveled": "1.1.1",
-    "typescript": "5.4.4"
+    "typescript": "5.4.5"
   }
 }
