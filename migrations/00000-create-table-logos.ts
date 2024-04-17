@@ -3,7 +3,7 @@ import { Sql } from 'postgres';
 export async function up(sql: Sql) {
   await sql`
     CREATE TABLE logos (
-      id integer PRIMARY key generated always AS identity,
+      id integer PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
       name varchar(20) NOT NULL
     )
   `;
