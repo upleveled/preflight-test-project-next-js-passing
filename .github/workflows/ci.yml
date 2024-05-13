@@ -15,10 +15,6 @@ jobs:
       PGUSERNAME: preflight_test_project_next_js_passing
       PGPASSWORD: preflight_test_project_next_js_passing
     steps:
-      - name: Check PostgreSQL version
-        run: |
-          postgres --version
-          initdb --version
       # Start preinstalled PostgreSQL database on Windows, macOS and Linux
       # https://github.com/karlhorky/github-tricks/#github-actions-start-preinstalled-postgresql-database-on-windows-macos-and-linux
       - name: Add PostgreSQL binaries to PATH
@@ -28,6 +24,8 @@ jobs:
             echo "$PGBIN" >> $GITHUB_PATH
           elif [ "$RUNNER_OS" == "Linux" ]; then
             echo "$(pg_config --bindir)" >> $GITHUB_PATH
+          elif [ "$RUNNER_OS" == "macOS" ]; then
+            echo "$(brew --prefix)/opt/postgresql@14/bin" >> $GITHUB_PATH
           fi
       - name: Start preinstalled PostgreSQL
         shell: bash
