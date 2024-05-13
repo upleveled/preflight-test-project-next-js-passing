@@ -17,6 +17,11 @@ jobs:
     steps:
       # Start preinstalled PostgreSQL database on Windows, macOS and Linux
       # https://github.com/karlhorky/github-tricks/#github-actions-start-preinstalled-postgresql-database-on-windows-macos-and-linux
+      - name: Install PostgreSQL on macOS
+        shell: bash
+        if: runner.os == 'macOS'
+        run: |
+          brew install postgresql
       - name: Add PostgreSQL binaries to PATH
         shell: bash
         run: |
