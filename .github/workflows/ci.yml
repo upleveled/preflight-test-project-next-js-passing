@@ -24,6 +24,8 @@ jobs:
             echo "$PGBIN" >> $GITHUB_PATH
           elif [ "$RUNNER_OS" == "Linux" ]; then
             echo "$(pg_config --bindir)" >> $GITHUB_PATH
+          elif [ "$RUNNER_OS" == "macOS" ]; then
+            echo "$(pg_config --bindir)" >> $GITHUB_PATH
           fi
       - name: Start preinstalled PostgreSQL
         shell: bash
