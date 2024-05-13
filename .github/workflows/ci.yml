@@ -25,6 +25,10 @@ jobs:
           elif [ "$RUNNER_OS" == "Linux" ]; then
             echo "$(pg_config --bindir)" >> $GITHUB_PATH
           fi
+      - name: Check PostgreSQL version
+        run: |
+          initdb --version
+          postgres --version
       - name: Start preinstalled PostgreSQL
         shell: bash
         run: |
