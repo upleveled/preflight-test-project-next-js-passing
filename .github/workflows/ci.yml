@@ -27,8 +27,8 @@ jobs:
           fi
       - name: Check PostgreSQL version
         run: |
-          initdb --version
           postgres --version
+          initdb --version
       - name: Start preinstalled PostgreSQL
         shell: bash
         run: |
