@@ -26,15 +26,15 @@
     "@ts-safeql/eslint-plugin": "3.2.1",
     "@types/dotenv-safe": "8.1.6",
     "@types/node": "20.12.12",
-    "@types/react": "18.3.2",
+    "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
     "eslint-config-upleveled": "8.1.7",
     "libpg-query": "16.2.0",
     "prettier": "3.2.5",
     "prettier-plugin-embed": "0.4.15",
     "prettier-plugin-sql": "0.18.0",
-    "stylelint": "16.5.0",
-    "stylelint-config-upleveled": "1.1.1",
+    "stylelint": "16.6.0",
+    "stylelint-config-upleveled": "1.1.2",
     "typescript": "5.4.5"
   },
   "packageManager": "pnpm@9.1.2"
