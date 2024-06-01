@@ -61,14 +61,14 @@ importers:
         specifier: 16.2.0
         version: 16.2.0(encoding@0.1.13)
       prettier:
-        specifier: 3.2.5
-        version: 3.2.5
+        specifier: 3.3.0
+        version: 3.3.0
       prettier-plugin-embed:
         specifier: 0.4.15
         version: 0.4.15
       prettier-plugin-sql:
         specifier: 0.18.0
-        version: 0.18.0(prettier@3.2.5)
+        version: 0.18.0(prettier@3.3.0)
       stylelint:
         specifier: 16.6.1
         version: 16.6.1(typescript@5.4.5)
@@ -2331,8 +2331,8 @@ packages:
     peerDependencies:
       prettier: ^3.0.3
 
-  prettier@3.2.5:
-    resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
+  prettier@3.3.0:
+    resolution: {integrity: sha512-J9odKxERhCQ10OC2yb93583f6UnYutOeiV5i0zEDS7UGTdUt0u+y8erxl3lBKvwo/JHyyoEdXjwp4dke9oyZ/g==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -5391,15 +5391,15 @@ snapshots:
     transitivePeerDependencies:
       - babel-plugin-macros
 
-  prettier-plugin-sql@0.18.0(prettier@3.2.5):
+  prettier-plugin-sql@0.18.0(prettier@3.3.0):
     dependencies:
       jsox: 1.2.119
       node-sql-parser: 4.18.0
-      prettier: 3.2.5
+      prettier: 3.3.0
       sql-formatter: 15.3.0
       tslib: 2.6.2
 
-  prettier@3.2.5: {}
+  prettier@3.3.0: {}
 
   proc-log@3.0.0: {}
 
