@@ -55,8 +55,8 @@ importers:
         specifier: 18.3.0
         version: 18.3.0
       eslint-config-upleveled:
-        specifier: 8.3.1
-        version: 8.3.1(@babel/core@7.24.4)(@types/eslint@8.56.9)(@types/node@20.14.9)(@types/react-dom@18.3.0)(@types/react@18.3.3)(eslint-plugin-import@2.29.1(@typescript-eslint/parser@8.0.0-alpha.34(eslint@8.57.0)(typescript@5.5.3))(eslint@8.57.0))(eslint@8.57.0)(globals@14.0.0)(typescript@5.5.3)
+        specifier: 8.5.0
+        version: 8.5.0(@babel/core@7.24.4)(@types/eslint@8.56.9)(@types/node@20.14.9)(@types/react-dom@18.3.0)(@types/react@18.3.3)(eslint-plugin-import@2.29.1(@typescript-eslint/parser@8.0.0-alpha.34(eslint@8.57.0)(typescript@5.5.3))(eslint@8.57.0))(eslint@8.57.0)(globals@14.0.0)(typescript@5.5.3)
       libpg-query:
         specifier: 16.2.0
         version: 16.2.0(encoding@0.1.13)
@@ -67,8 +67,8 @@ importers:
         specifier: 0.4.15
         version: 0.4.15
       prettier-plugin-sql:
-        specifier: 0.18.0
-        version: 0.18.0(prettier@3.3.2)
+        specifier: 0.18.1
+        version: 0.18.1(prettier@3.3.2)
       stylelint:
         specifier: 16.6.1
         version: 16.6.1(typescript@5.5.3)
@@ -1246,8 +1246,8 @@ packages:
   eslint-config-flat-gitignore@0.1.5:
     resolution: {integrity: sha512-hEZLwuZjDBGDERA49c2q7vxc8sCGv8EdBp6PQYzGOMcHIgrfG9YOM6s/4jx24zhD+wnK9AI8mgN5RxSss5nClQ==}
 
-  eslint-config-upleveled@8.3.1:
-    resolution: {integrity: sha512-u+mPEqeLQSC1QOZ8eJw/KivunyOt0EqSCOWpfK5VQdk19GAhrRtlgHTlVCGdQ6bYhhDkn1XDILNC6s1XDDKiyA==}
+  eslint-config-upleveled@8.5.0:
+    resolution: {integrity: sha512-hoHfjiunnIoMGC0JWstt1IkL72PnNylwkSbhoBRW4YOx/AOSegFfkBVctLk5W90QeSMr3+i4CEsR8OksmY5XSg==}
     engines: {node: '>=20.9.0'}
     hasBin: true
     peerDependencies:
@@ -2335,8 +2335,8 @@ packages:
   prettier-plugin-embed@0.4.15:
     resolution: {integrity: sha512-9pZVIp3bw2jw+Ge+iAMZ4j+sIVC9cPruZ93H2tj5Wa/3YDFDJ/uYyVWdUGfcFUnv28drhW2Bmome9xSGXsPKOw==}
 
-  prettier-plugin-sql@0.18.0:
-    resolution: {integrity: sha512-E7WXooLNtWyv79sYYHtQbfvXZ5B/OOR0ySBsB2evfrfvD4wJos1OKLBvVLC/a7+7YpG30bSUTgc2DEwz8ctPmQ==}
+  prettier-plugin-sql@0.18.1:
+    resolution: {integrity: sha512-2+Nob2sg7hzLAKJoE6sfgtkhBZCqOzrWHZPvE4Kee/e80oOyI4qwy9vypeltqNBJwTtq3uiKPrCxlT03bBpOaw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       prettier: ^3.0.3
@@ -4227,7 +4227,7 @@ snapshots:
       find-up: 7.0.0
       parse-gitignore: 2.0.0
 
-  eslint-config-upleveled@8.3.1(@babel/core@7.24.4)(@types/eslint@8.56.9)(@types/node@20.14.9)(@types/react-dom@18.3.0)(@types/react@18.3.3)(eslint-plugin-import@2.29.1(@typescript-eslint/parser@8.0.0-alpha.34(eslint@8.57.0)(typescript@5.5.3))(eslint@8.57.0))(eslint@8.57.0)(globals@14.0.0)(typescript@5.5.3):
+  eslint-config-upleveled@8.5.0(@babel/core@7.24.4)(@types/eslint@8.56.9)(@types/node@20.14.9)(@types/react-dom@18.3.0)(@types/react@18.3.3)(eslint-plugin-import@2.29.1(@typescript-eslint/parser@8.0.0-alpha.34(eslint@8.57.0)(typescript@5.5.3))(eslint@8.57.0))(eslint@8.57.0)(globals@14.0.0)(typescript@5.5.3):
     dependencies:
       '@babel/eslint-parser': 7.24.7(@babel/core@7.24.4)(eslint@8.57.0)
       '@eslint/compat': 1.1.0
@@ -5443,7 +5443,7 @@ snapshots:
     transitivePeerDependencies:
       - babel-plugin-macros
 
-  prettier-plugin-sql@0.18.0(prettier@3.3.2):
+  prettier-plugin-sql@0.18.1(prettier@3.3.2):
     dependencies:
       jsox: 1.2.119
       node-sql-parser: 4.18.0
