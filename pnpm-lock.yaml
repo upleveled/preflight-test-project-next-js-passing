@@ -36,8 +36,8 @@ importers:
         specifier: 0.33.4
         version: 0.33.4
       tsx:
-        specifier: 4.16.2
-        version: 4.16.2
+        specifier: 4.16.3
+        version: 4.16.3
     devDependencies:
       '@ts-safeql/eslint-plugin':
         specifier: 3.3.2
@@ -2770,8 +2770,8 @@ packages:
     peerDependencies:
       typescript: '>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta'
 
-  tsx@4.16.2:
-    resolution: {integrity: sha512-C1uWweJDgdtX2x600HjaFaucXTilT7tgUZHbOE4+ypskZ1OP8CRCSDkCxG6Vya9EwaFIVagWwpaVAn5wzypaqQ==}
+  tsx@4.16.3:
+    resolution: {integrity: sha512-MP8AEUxVnboD2rCC6kDLxnpDBNWN9k3BSVU/0/nNxgm70bPBnfn+yCKcnOsIVPQwdkbKYoFOlKjjWZWJ2XCXUg==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -3406,7 +3406,7 @@ snapshots:
       postgres: 3.4.4
       synckit: 0.9.0
       ts-pattern: 4.3.0
-      tsx: 4.16.2
+      tsx: 4.16.3
       zod: 3.22.4
       zod-to-json-schema: 3.20.1(zod@3.22.4)
     transitivePeerDependencies:
@@ -5943,7 +5943,7 @@ snapshots:
       tslib: 1.14.1
       typescript: 5.5.4
 
-  tsx@4.16.2:
+  tsx@4.16.3:
     dependencies:
       esbuild: 0.21.5
       get-tsconfig: 4.7.5
