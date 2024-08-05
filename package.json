@@ -23,7 +23,7 @@
     "tsx": "4.16.5"
   },
   "devDependencies": {
-    "@ts-safeql/eslint-plugin": "3.3.2",
+    "@ts-safeql/eslint-plugin": "3.4.0",
     "@types/dotenv-safe": "8.1.6",
     "@types/node": "22.1.0",
     "@types/react": "18.3.3",
