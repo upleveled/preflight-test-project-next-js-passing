@@ -19,7 +19,9 @@ jobs:
       # https://github.com/karlhorky/github-tricks/#github-actions-create-postgresql-databases-on-windows-macos-and-linux
       - name: Install PostgreSQL on macOS
         if: runner.os == 'macOS'
-        run: brew install postgresql@16
+        run: |
+          brew install postgresql@16
+          brew link postgresql@16
       - name: Add PostgreSQL binaries to PATH
         shell: bash
         run: |
