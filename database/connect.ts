@@ -1,6 +1,6 @@
 import 'server-only';
 import { headers } from 'next/headers';
-import postgres, { Sql } from 'postgres';
+import postgres, { type Sql } from 'postgres';
 import { setEnvironmentVariables } from '../util/config.js';
 
 setEnvironmentVariables();
