@@ -104,5 +104,5 @@ jobs:
 
       - name: Install and run Preflight
         run: |
-          pnpm add --global @upleveled/preflight
+          pnpm add --global https://pkg.csb.dev/upleveled/preflight/commit/231408d9/@upleveled/preflight
           preflight
