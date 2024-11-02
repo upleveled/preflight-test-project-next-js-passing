@@ -17,7 +17,7 @@
     "postgres": "3.4.5",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "sass": "1.80.5",
+    "sass": "1.80.6",
     "server-only": "0.0.1",
     "sharp": "0.33.5",
     "tsx": "4.19.2"
@@ -28,7 +28,7 @@
     "@types/node": "22.8.6",
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
-    "eslint": "9.13.0",
+    "eslint": "9.14.0",
     "eslint-config-upleveled": "8.11.3",
     "libpg-query": "16.3.0",
     "prettier": "3.3.3",
