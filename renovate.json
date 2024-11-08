@@ -12,7 +12,7 @@
         "overrides",
         "packageManager"
       ],
-      "updateTypes": ["patch", "minor"],
+      "matchUpdateTypes": ["patch", "minor"],
       "automerge": true
     },
     {
@@ -25,7 +25,7 @@
         "overrides",
         "packageManager"
       ],
-      "updateTypes": ["major"],
+      "matchUpdateTypes": ["major"],
       "automerge": true
     }
   ]
