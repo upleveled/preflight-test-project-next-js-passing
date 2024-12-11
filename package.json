@@ -25,7 +25,7 @@
   "devDependencies": {
     "@ts-safeql/eslint-plugin": "3.5.1",
     "@types/dotenv-safe": "8.1.6",
-    "@types/node": "22.10.1",
+    "@types/node": "22.10.2",
     "@types/react": "19.0.1",
     "@types/react-dom": "19.0.2",
     "eslint": "9.16.0",
