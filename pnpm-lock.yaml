@@ -40,8 +40,8 @@ importers:
         version: 4.19.2
     devDependencies:
       '@ts-safeql/eslint-plugin':
-        specifier: 3.6.4
-        version: 3.6.4(@typescript-eslint/utils@8.17.0(eslint@9.17.0)(typescript@5.7.2))(libpg-query@16.3.0(encoding@0.1.13))
+        specifier: 3.6.5
+        version: 3.6.5(@typescript-eslint/utils@8.17.0(eslint@9.17.0)(typescript@5.7.2))(libpg-query@16.3.0(encoding@0.1.13))
       '@types/dotenv-safe':
         specifier: 8.1.6
         version: 8.1.6
@@ -778,8 +778,8 @@ packages:
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
 
-  '@ts-safeql/eslint-plugin@3.6.4':
-    resolution: {integrity: sha512-3BMSP9ZvIuu46ATw0HUarlXOqG0GEUHit4catoEFJ7VGvC9uZyLfqlsEedrWDFI3QPT52LuPyz9YF5Hq6l9QZw==}
+  '@ts-safeql/eslint-plugin@3.6.5':
+    resolution: {integrity: sha512-p6Bt/Bb+Mz5sW8TqHustxIGO6X7jnPSOzh979of2t0J3AUje6uDUNlRmQKsb76Hu7UDrpOShl76ISNKcczYXdA==}
     peerDependencies:
       '@typescript-eslint/utils': '>=7.8.0'
       libpg-query: '>=13.2.5'
@@ -3763,7 +3763,7 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@ts-safeql/eslint-plugin@3.6.4(@typescript-eslint/utils@8.17.0(eslint@9.17.0)(typescript@5.7.2))(libpg-query@16.3.0(encoding@0.1.13))':
+  '@ts-safeql/eslint-plugin@3.6.5(@typescript-eslint/utils@8.17.0(eslint@9.17.0)(typescript@5.7.2))(libpg-query@16.3.0(encoding@0.1.13))':
     dependencies:
       '@typescript-eslint/utils': 8.17.0(eslint@9.17.0)(typescript@5.7.2)
       chokidar: 3.6.0
