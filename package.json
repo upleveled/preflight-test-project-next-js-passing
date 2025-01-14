@@ -17,7 +17,7 @@
     "postgres": "3.4.5",
     "react": "19.0.0",
     "react-dom": "19.0.0",
-    "sass": "1.83.3",
+    "sass": "1.83.4",
     "server-only": "0.0.1",
     "sharp": "0.33.5",
     "tsx": "4.19.2"
@@ -26,7 +26,7 @@
     "@ts-safeql/eslint-plugin": "3.6.6",
     "@types/dotenv-safe": "8.1.6",
     "@types/node": "22.10.6",
-    "@types/react": "19.0.6",
+    "@types/react": "19.0.7",
     "@types/react-dom": "19.0.3",
     "eslint": "9.18.0",
     "eslint-config-upleveled": "8.12.1",
