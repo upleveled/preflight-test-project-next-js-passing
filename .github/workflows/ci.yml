@@ -73,19 +73,8 @@ jobs:
           node-version: 'lts/*'
           cache: 'pnpm'
 
-      # Avoid Node.js bug with long filenames on Windows
-      # https://github.com/nodejs/node/issues/50753
-      - run: echo 'node-linker=hoisted' > ./.npmrc
-        shell: bash
-        if: runner.os == 'Windows'
-
       - name: Install dependencies
         run: pnpm install
-
-      # Remove .npmrc file again on Windows
-      # https://github.com/nodejs/node/issues/50753
-      - run: rm .npmrc
-        if: runner.os == 'Windows'
 
       - run: pnpm migrate up
 
