@@ -82,6 +82,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      # Avoid libpg-query build errors with long paths on Windows
+      # https://github.com/upleveled/preflight-test-project-next-js-passing/issues/435
+      - run: git restore .npmrc
+        if: runner.os == 'Windows'
+
       - run: pnpm migrate up
 
       # Also generates next-env.d.ts, required for tsc
