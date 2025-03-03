@@ -13,7 +13,7 @@
   "dependencies": {
     "@upleveled/ley": "0.9.2",
     "dotenv-safe": "9.1.0",
-    "next": "15.2.0",
+    "next": "15.2.1",
     "postgres": "3.4.5",
     "react": "19.0.0",
     "react-dom": "19.0.0",
@@ -25,7 +25,7 @@
   "devDependencies": {
     "@ts-safeql/eslint-plugin": "3.6.7",
     "@types/dotenv-safe": "8.1.6",
-    "@types/node": "22.13.8",
+    "@types/node": "22.13.9",
     "@types/react": "19.0.10",
     "@types/react-dom": "19.0.4",
     "eslint": "9.21.0",
