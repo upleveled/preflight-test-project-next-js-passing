@@ -19,7 +19,9 @@ initdb -D "$PGDATA"
 sed "/^[# ]*log_destination/clog_destination = 'syslog'" -i "$PGDATA/postgresql.conf"
 
 echo "Starting PostgreSQL..."
-pg_ctl start -D "$PGDATA"
+pg_ctl start --pgdata="$PGDATA" --log="/tmp/postgresql-server-start.log"
+sleep 1
+cat "/tmp/postgresql-server-start.log"
 
 echo "Creating database, user and schema..."
 psql -U postgres postgres << SQL
