@@ -29,7 +29,7 @@
     "@types/react": "19.0.12",
     "@types/react-dom": "19.0.4",
     "eslint": "9.22.0",
-    "eslint-config-upleveled": "9.2.1",
+    "eslint-config-upleveled": "9.2.2",
     "libpg-query": "16.3.0",
     "prettier": "3.5.3",
     "prettier-plugin-embed": "0.5.0",
