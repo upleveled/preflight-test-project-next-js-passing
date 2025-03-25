@@ -58,8 +58,8 @@ importers:
         specifier: 9.23.0
         version: 9.23.0
       eslint-config-upleveled:
-        specifier: 9.2.2
-        version: 9.2.2(@babel/core@7.26.0)(@types/node@22.13.13)(@types/react-dom@19.0.4(@types/react@19.0.12))(@types/react@19.0.12)(eslint-plugin-import@2.29.1(@typescript-eslint/parser@8.27.0(eslint@9.23.0)(typescript@5.8.2))(eslint@9.23.0))(eslint@9.23.0)(globals@15.15.0)(is-bun-module@1.1.0)(typescript@5.8.2)
+        specifier: 9.2.3
+        version: 9.2.3(@babel/core@7.26.0)(@types/node@22.13.13)(@types/react-dom@19.0.4(@types/react@19.0.12))(@types/react@19.0.12)(eslint-plugin-import@2.29.1(@typescript-eslint/parser@8.27.0(eslint@9.23.0)(typescript@5.8.2))(eslint@9.23.0))(eslint@9.23.0)(globals@15.15.0)(typescript@5.8.2)
       libpg-query:
         specifier: 16.3.0
         version: 16.3.0(encoding@0.1.13)
@@ -1414,8 +1414,8 @@ packages:
     peerDependencies:
       eslint: ^9.5.0
 
-  eslint-config-upleveled@9.2.2:
-    resolution: {integrity: sha512-tPNt9IBISzG4QUEHCu7F5A/0e9DOKIrlcGON7dyDoYpjD5sdc8yxsxb6I6xUWRM4WfGPdxdiiMIJP5oFg1wOWw==}
+  eslint-config-upleveled@9.2.3:
+    resolution: {integrity: sha512-lMaXZQ8IMlwX2iyhJRyafXQmoMzGCFBgTMuWxEVdUzgHkcEhLPQ0aF12iCEThsFJv+LGMJUKniYtYESVgL7iTQ==}
     engines: {node: '>=20.9.0'}
     hasBin: true
     peerDependencies:
@@ -1429,20 +1429,17 @@ packages:
   eslint-import-resolver-node@0.3.9:
     resolution: {integrity: sha512-WFj2isz22JahUv+B788TlO3N6zL3nNJGU8CcZbPZvVEkBPaJdCV4vy5wyghty5ROFbCRnm132v8BScu5/1BQ8g==}
 
-  eslint-import-resolver-typescript@4.2.2:
-    resolution: {integrity: sha512-Rg1YEsb9UKLQ8BOv27cS3TZ6LhEAKQVgVOXArcE/sQrlnX8+FjmJRSC29ij1qrn+eurFuMsCFUcs7/+27T0vqQ==}
+  eslint-import-resolver-typescript@4.2.3:
+    resolution: {integrity: sha512-trG0f6LY+g7CJCV8AN6O+cU5B13tONNDF9ZcnxDtUQQqvufNFDn3zcb/EIslXHwl1IjloZoVvOOcKtBaO9HlBw==}
     engines: {node: ^16.17.0 || >=18.6.0}
     peerDependencies:
       eslint: '*'
       eslint-plugin-import: '*'
       eslint-plugin-import-x: '*'
-      is-bun-module: '*'
     peerDependenciesMeta:
       eslint-plugin-import:
         optional: true
       eslint-plugin-import-x:
-        optional: true
-      is-bun-module:
         optional: true
 
   eslint-module-utils@2.8.1:
@@ -1943,8 +1940,8 @@ packages:
     resolution: {integrity: sha512-rWP3AMAalQSesXO8gleROyL2iKU73SX5Er66losQn9rWOWL4Gef0a/xOEOVqjWGMuR2vHG3FJ8UUmT700O8oFg==}
     engines: {node: '>=18.20'}
 
-  is-bun-module@1.1.0:
-    resolution: {integrity: sha512-4mTAVPlrXpaN3jtF0lsnPCMGnq4+qZjVIKq0HCpfcqf8OC1SM5oATCIAPM5V5FN05qp2NNnFndphmdZS9CV3hA==}
+  is-bun-module@2.0.0:
+    resolution: {integrity: sha512-gNCGbnnnnFAUGKeZ9PdbyeGYJqewpmc2aKHUEMO5nQPWU9lOmv7jcmQIv+qHD8fXW6W7qfuCwX4rY9LNRjXrkQ==}
 
   is-callable@1.2.7:
     resolution: {integrity: sha512-1BC0BVFhS/p0qtw6enp8e+8OD0UrK0oFLztSjNzhcKA3WDuJxxAPXzPuPtKkjEY9UUoEWlX/8fgKeu2S8i9JTA==}
@@ -4566,7 +4563,7 @@ snapshots:
       '@eslint/compat': 1.2.7(eslint@9.23.0)
       eslint: 9.23.0
 
-  eslint-config-upleveled@9.2.2(@babel/core@7.26.0)(@types/node@22.13.13)(@types/react-dom@19.0.4(@types/react@19.0.12))(@types/react@19.0.12)(eslint-plugin-import@2.29.1(@typescript-eslint/parser@8.27.0(eslint@9.23.0)(typescript@5.8.2))(eslint@9.23.0))(eslint@9.23.0)(globals@15.15.0)(is-bun-module@1.1.0)(typescript@5.8.2):
+  eslint-config-upleveled@9.2.3(@babel/core@7.26.0)(@types/node@22.13.13)(@types/react-dom@19.0.4(@types/react@19.0.12))(@types/react@19.0.12)(eslint-plugin-import@2.29.1(@typescript-eslint/parser@8.27.0(eslint@9.23.0)(typescript@5.8.2))(eslint@9.23.0))(eslint@9.23.0)(globals@15.15.0)(typescript@5.8.2):
     dependencies:
       '@babel/eslint-parser': 7.26.10(@babel/core@7.26.0)(eslint@9.23.0)
       '@eslint/compat': 1.2.7(eslint@9.23.0)
@@ -4578,7 +4575,7 @@ snapshots:
       '@typescript-eslint/parser': 8.27.0(eslint@9.23.0)(typescript@5.8.2)
       eslint: 9.23.0
       eslint-config-flat-gitignore: 2.1.0(eslint@9.23.0)
-      eslint-import-resolver-typescript: 4.2.2(eslint-plugin-import-x@4.9.1(eslint@9.23.0)(typescript@5.8.2))(eslint-plugin-import@2.29.1(@typescript-eslint/parser@8.27.0(eslint@9.23.0)(typescript@5.8.2))(eslint@9.23.0))(eslint@9.23.0)(is-bun-module@1.1.0)
+      eslint-import-resolver-typescript: 4.2.3(eslint-plugin-import-x@4.9.1(eslint@9.23.0)(typescript@5.8.2))(eslint-plugin-import@2.29.1(@typescript-eslint/parser@8.27.0(eslint@9.23.0)(typescript@5.8.2))(eslint@9.23.0))(eslint@9.23.0)
       eslint-plugin-import-x: 4.9.1(eslint@9.23.0)(typescript@5.8.2)
       eslint-plugin-jsx-a11y: 6.10.2(eslint@9.23.0)
       eslint-plugin-react: 7.37.4(eslint@9.23.0)
@@ -4599,7 +4596,6 @@ snapshots:
     transitivePeerDependencies:
       - '@babel/core'
       - eslint-plugin-import
-      - is-bun-module
       - supports-color
 
   eslint-import-resolver-node@0.3.9:
@@ -4610,18 +4606,18 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-import-resolver-typescript@4.2.2(eslint-plugin-import-x@4.9.1(eslint@9.23.0)(typescript@5.8.2))(eslint-plugin-import@2.29.1(@typescript-eslint/parser@8.27.0(eslint@9.23.0)(typescript@5.8.2))(eslint@9.23.0))(eslint@9.23.0)(is-bun-module@1.1.0):
+  eslint-import-resolver-typescript@4.2.3(eslint-plugin-import-x@4.9.1(eslint@9.23.0)(typescript@5.8.2))(eslint-plugin-import@2.29.1(@typescript-eslint/parser@8.27.0(eslint@9.23.0)(typescript@5.8.2))(eslint@9.23.0))(eslint@9.23.0):
     dependencies:
       debug: 4.4.0
       eslint: 9.23.0
       get-tsconfig: 4.10.0
+      is-bun-module: 2.0.0
       rspack-resolver: 1.2.2
       stable-hash: 0.0.5
       tinyglobby: 0.2.12
     optionalDependencies:
       eslint-plugin-import: 2.29.1(@typescript-eslint/parser@8.27.0(eslint@9.23.0)(typescript@5.8.2))(eslint@9.23.0)
       eslint-plugin-import-x: 4.9.1(eslint@9.23.0)(typescript@5.8.2)
-      is-bun-module: 1.1.0
     transitivePeerDependencies:
       - supports-color
 
@@ -5242,10 +5238,9 @@ snapshots:
     dependencies:
       builtin-modules: 4.0.0
 
-  is-bun-module@1.1.0:
+  is-bun-module@2.0.0:
     dependencies:
       semver: 7.7.1
-    optional: true
 
   is-callable@1.2.7: {}
 
