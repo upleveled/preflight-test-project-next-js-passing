@@ -19,7 +19,7 @@
     "react-dom": "19.1.0",
     "sass": "1.89.2",
     "server-only": "0.0.1",
-    "sharp": "0.34.2",
+    "sharp": "0.34.3",
     "tsx": "4.20.3"
   },
   "devDependencies": {
@@ -33,7 +33,7 @@
     "libpg-query": "17.5.5",
     "prettier": "3.6.2",
     "prettier-plugin-embed": "0.5.0",
-    "prettier-plugin-sql": "0.19.1",
+    "prettier-plugin-sql": "0.19.2",
     "stylelint": "16.21.1",
     "stylelint-config-upleveled": "1.1.10",
     "typescript": "5.8.3"
