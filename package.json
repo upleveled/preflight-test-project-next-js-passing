@@ -43,7 +43,8 @@
     "onlyBuiltDependencies": [
       "esbuild",
       "libpg-query",
-      "sharp"
+      "sharp",
+      "unrs-resolver"
     ]
   }
 }
