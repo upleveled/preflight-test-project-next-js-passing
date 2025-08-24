@@ -20,7 +20,7 @@
     "sass": "1.90.0",
     "server-only": "0.0.1",
     "sharp": "0.34.3",
-    "tsx": "4.20.4"
+    "tsx": "4.20.5"
   },
   "devDependencies": {
     "@ts-safeql/eslint-plugin": "4.0.0",
