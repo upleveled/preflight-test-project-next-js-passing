@@ -43,8 +43,8 @@ importers:
         specifier: 4.0.1
         version: 4.0.1(@typescript-eslint/utils@8.40.0(eslint@9.35.0)(typescript@5.9.2))(libpg-query@17.6.0)
       '@types/dotenv-safe':
-        specifier: 8.1.6
-        version: 8.1.6
+        specifier: 9.1.0
+        version: 9.1.0(dotenv@8.6.0)
       '@types/node':
         specifier: 24.3.1
         version: 24.3.1
@@ -791,8 +791,10 @@ packages:
   '@tybys/wasm-util@0.10.0':
     resolution: {integrity: sha512-VyyPYFlOMNylG45GoAe0xDoLwWuowvf92F9kySqzYh8vmYm7D2u4iUJKa1tOUpS70Ku13ASrOkS4ScXFsTaCNQ==}
 
-  '@types/dotenv-safe@8.1.6':
-    resolution: {integrity: sha512-ftZXu3WGT6ALq+f98IX2gWriGMPds+0ku5h8kZewNpY47ua+Z+XNcin9apZ2kVd4B9LV1vMfUOyDf1/hhreR0Q==}
+  '@types/dotenv-safe@9.1.0':
+    resolution: {integrity: sha512-cL9PCogrlu+uDtq3M9qvAs+G5rfHwx+untcZGzA3fX8++NVdg9f01zdA175h55TstsEFRogXMUObo6QDduc/5w==}
+    peerDependencies:
+      dotenv: '>=8.2.0'
 
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
@@ -3499,7 +3501,7 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
-  '@types/dotenv-safe@8.1.6':
+  '@types/dotenv-safe@9.1.0(dotenv@8.6.0)':
     dependencies:
       '@types/node': 24.3.1
       dotenv: 8.6.0
