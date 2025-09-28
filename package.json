@@ -38,13 +38,5 @@
     "stylelint-config-upleveled": "2.0.2",
     "typescript": "5.9.2"
   },
-  "packageManager": "pnpm@10.17.0",
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild",
-      "libpg-query",
-      "sharp",
-      "unrs-resolver"
-    ]
-  }
+  "packageManager": "pnpm@10.17.0"
 }
