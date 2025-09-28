@@ -73,12 +73,6 @@ jobs:
           node-version: '22.19.0'
           cache: 'pnpm'
 
-      # Avoid libpg-query build errors with long paths on Windows
-      # https://github.com/upleveled/preflight-test-project-next-js-passing/issues/435
-      - run: echo 'hoisted' >> $npm_config_node_linker
-        shell: bash
-        if: runner.os == 'Windows'
-
       - name: Install dependencies
         run: pnpm install
 
