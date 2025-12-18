@@ -41,7 +41,7 @@ importers:
     devDependencies:
       '@ts-safeql/eslint-plugin':
         specifier: 4.0.8
-        version: 4.0.8(@typescript-eslint/utils@8.45.0(eslint@9.39.1)(typescript@5.9.3))(libpg-query@17.6.0)
+        version: 4.0.8(@typescript-eslint/utils@8.45.0(eslint@9.39.1)(typescript@5.9.3))(libpg-query@17.7.3)
       '@types/dotenv-safe':
         specifier: 9.1.0
         version: 9.1.0(dotenv@8.6.0)
@@ -61,8 +61,8 @@ importers:
         specifier: 9.4.2
         version: 9.4.2(@babel/core@7.26.0)(@types/node@25.0.0)(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(@typescript-eslint/utils@8.45.0(eslint@9.39.1)(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(@typescript-eslint/parser@8.45.0(eslint@9.39.1)(typescript@5.9.3))(eslint@9.39.1))(eslint@9.39.1)(globals@16.3.0)(typescript@5.9.3)
       libpg-query:
-        specifier: 17.6.0
-        version: 17.6.0
+        specifier: 17.7.3
+        version: 17.7.3
       prettier:
         specifier: 3.7.4
         version: 3.7.4
@@ -802,8 +802,8 @@ packages:
     resolution: {integrity: sha512-HNjmfLQEVRZmHRET336f20H/8kOozUGwk7yajvsonjNxbj2wBTK1WsQuHkD5yYh9RxFGL2EyDHryOihOwUoKDA==}
     engines: {node: '>= 10.0.0'}
 
-  '@pgsql/types@17.6.1':
-    resolution: {integrity: sha512-Hk51+nyOxS7Dy5oySWywyNZxo5HndX1VDXT4ZEBD+p+vvMFM2Vc+sKSuByCiI8banou4edbgdnOC251IOuq7QQ==}
+  '@pgsql/types@17.6.2':
+    resolution: {integrity: sha512-1UtbELdbqNdyOShhrVfSz3a1gDi0s9XXiQemx+6QqtsrXe62a6zOGU+vjb2GRfG5jeEokI1zBBcfD42enRv0Rw==}
 
   '@pkgr/core@0.2.7':
     resolution: {integrity: sha512-YLT9Zo3oNPJoBjBc4q8G2mjU4tqIbf5CEOORbUUr48dCD9q3umJ3IPlVqOqDakPfd2HuwccBaqlGhN4Gmr5OWg==}
@@ -1989,7 +1989,7 @@ packages:
 
   jsox@1.2.123:
     resolution: {integrity: sha512-LYordXJ/0Q4G8pUE1Pvh4fkfGvZY7lRe4WIJKl0wr0rtFDVw9lcdNW95GH0DceJ6E9xh41zJNW0vreEz7xOxCw==}
-    deprecated: Bad typescript bindings.
+    deprecated: Discovered syntax errors in ts bindings
     hasBin: true
 
   jsx-ast-utils-x@0.1.0:
@@ -2031,8 +2031,8 @@ packages:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
     engines: {node: '>= 0.8.0'}
 
-  libpg-query@17.6.0:
-    resolution: {integrity: sha512-r4zOTcLTGYS5PlLQAicJ6Yi/tvZFag42YUuNEO8pi8bwt/ZZ4kj514J4QV5bOx0mZzPLF6agbfNXQVxGgmHR8g==}
+  libpg-query@17.7.3:
+    resolution: {integrity: sha512-lHKBvoWRsXt/9bJxpAeFxkLu0CA6tELusqy3o1z6/DwGXSETxhKJDaNlNdrNV8msvXDLBhpg/4RE/fKKs5rYFA==}
 
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
@@ -3399,7 +3399,7 @@ snapshots:
       '@parcel/watcher-win32-x64': 2.4.1
     optional: true
 
-  '@pgsql/types@17.6.1': {}
+  '@pgsql/types@17.6.2': {}
 
   '@pkgr/core@0.2.7': {}
 
@@ -3417,12 +3417,12 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@ts-safeql/eslint-plugin@4.0.8(@typescript-eslint/utils@8.45.0(eslint@9.39.1)(typescript@5.9.3))(libpg-query@17.6.0)':
+  '@ts-safeql/eslint-plugin@4.0.8(@typescript-eslint/utils@8.45.0(eslint@9.39.1)(typescript@5.9.3))(libpg-query@17.7.3)':
     dependencies:
       '@typescript-eslint/utils': 8.45.0(eslint@9.39.1)(typescript@5.9.3)
       chokidar: 4.0.3
       fp-ts: 2.16.9
-      libpg-query: 17.6.0
+      libpg-query: 17.7.3
       pg-connection-string: 2.7.0
       postgres: 3.4.7
       quansync: 0.2.10
@@ -4813,9 +4813,9 @@ snapshots:
       prelude-ls: 1.2.1
       type-check: 0.4.0
 
-  libpg-query@17.6.0:
+  libpg-query@17.7.3:
     dependencies:
-      '@pgsql/types': 17.6.1
+      '@pgsql/types': 17.6.2
 
   lines-and-columns@1.2.4: {}
 
