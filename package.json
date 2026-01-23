@@ -29,13 +29,13 @@
     "@types/react": "19.2.8",
     "@types/react-dom": "19.2.3",
     "eslint": "9.39.2",
-    "eslint-config-upleveled": "9.4.2",
+    "eslint-config-upleveled": "9.4.4",
     "libpg-query": "17.7.3",
     "prettier": "3.8.0",
     "prettier-plugin-embed": "0.5.1",
     "prettier-plugin-sql": "0.19.2",
     "stylelint": "17.0.0",
-    "stylelint-config-upleveled": "2.0.3",
+    "stylelint-config-upleveled": "2.0.4",
     "typescript": "5.9.3"
   },
   "packageManager": "pnpm@10.28.0"
