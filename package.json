@@ -31,7 +31,7 @@
     "eslint": "9.39.2",
     "eslint-config-upleveled": "9.4.4",
     "libpg-query": "17.7.3",
-    "prettier": "3.8.0",
+    "prettier": "3.8.1",
     "prettier-plugin-embed": "0.5.1",
     "prettier-plugin-sql": "0.19.2",
     "stylelint": "17.0.0",
