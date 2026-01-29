@@ -16,7 +16,7 @@ importers:
         version: 9.1.0(dotenv@8.6.0)
       next:
         specifier: 16.1.4
-        version: 16.1.4(@babel/core@7.26.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(sass@1.97.2)
+        version: 16.1.4(@babel/core@7.26.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(sass@1.97.3)
       postgres:
         specifier: 3.4.8
         version: 3.4.8
@@ -27,8 +27,8 @@ importers:
         specifier: 19.2.3
         version: 19.2.3(react@19.2.3)
       sass:
-        specifier: 1.97.2
-        version: 1.97.2
+        specifier: 1.97.3
+        version: 1.97.3
       server-only:
         specifier: 0.0.1
         version: 0.0.1
@@ -46,8 +46,8 @@ importers:
         specifier: 9.1.0
         version: 9.1.0(dotenv@8.6.0)
       '@types/node':
-        specifier: 25.0.9
-        version: 25.0.9
+        specifier: 25.0.10
+        version: 25.0.10
       '@types/react':
         specifier: 19.2.9
         version: 19.2.9
@@ -59,7 +59,7 @@ importers:
         version: 9.39.2
       eslint-config-upleveled:
         specifier: 9.4.4
-        version: 9.4.4(@babel/core@7.26.0)(@types/node@25.0.9)(@types/react-dom@19.2.3(@types/react@19.2.9))(@types/react@19.2.9)(@typescript-eslint/utils@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(@typescript-eslint/parser@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint@9.39.2))(eslint@9.39.2)(globals@16.5.0)(typescript@5.9.3)
+        version: 9.4.4(@babel/core@7.26.0)(@types/node@25.0.10)(@types/react-dom@19.2.3(@types/react@19.2.9))(@types/react@19.2.9)(@typescript-eslint/utils@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(@typescript-eslint/parser@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint@9.39.2))(eslint@9.39.2)(globals@16.5.0)(typescript@5.9.3)
       libpg-query:
         specifier: 17.7.3
         version: 17.7.3
@@ -865,8 +865,8 @@ packages:
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
 
-  '@types/node@25.0.9':
-    resolution: {integrity: sha512-/rpCXHlCWeqClNBwUhDcusJxXYDjZTyE8v5oTO7WbL8eij2nKhUeU89/6xgjU7N4/Vh3He0BtyhJdQbDyhiXAw==}
+  '@types/node@25.0.10':
+    resolution: {integrity: sha512-zWW5KPngR/yvakJgGOmZ5vTBemDoSqF3AcV/LrO5u5wTWyEAVVh+IT39G4gtyAkh3CtTZs8aX/yRM82OfzHJRg==}
 
   '@types/pegjs@0.10.6':
     resolution: {integrity: sha512-eLYXDbZWXh2uxf+w8sXS8d6KSoXTswfps6fvCUuVAGN8eRpfe7h9eSRydxiSJvo9Bf+GzifsDOr9TMQlmJdmkw==}
@@ -2463,8 +2463,8 @@ packages:
   safe-regex@2.1.1:
     resolution: {integrity: sha512-rx+x8AMzKb5Q5lQ95Zoi6ZbJqwCLkqi3XuJXp5P3rT8OEc6sZCJG5AE5dU3lsgRr/F4Bs31jSlVN+j5KrsGu9A==}
 
-  sass@1.97.2:
-    resolution: {integrity: sha512-y5LWb0IlbO4e97Zr7c3mlpabcbBtS+ieiZ9iwDooShpFKWXf62zz5pEPdwrLYm+Bxn1fnbwFGzHuCLSA9tBmrw==}
+  sass@1.97.3:
+    resolution: {integrity: sha512-fDz1zJpd5GycprAbu4Q2PV/RprsRtKC/0z82z0JLgdytmcq0+ujJbJ/09bPGDxCLkKY3Np5cRAOcWiVkLXJURg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -3501,7 +3501,7 @@ snapshots:
 
   '@types/dotenv-safe@9.1.0(dotenv@8.6.0)':
     dependencies:
-      '@types/node': 25.0.9
+      '@types/node': 25.0.10
       dotenv: 8.6.0
 
   '@types/estree@1.0.8': {}
@@ -3511,7 +3511,7 @@ snapshots:
   '@types/json5@0.0.29':
     optional: true
 
-  '@types/node@25.0.9':
+  '@types/node@25.0.10':
     dependencies:
       undici-types: 7.16.0
 
@@ -4117,13 +4117,13 @@ snapshots:
       '@eslint/compat': 1.4.0(eslint@9.39.2)
       eslint: 9.39.2
 
-  eslint-config-upleveled@9.4.4(@babel/core@7.26.0)(@types/node@25.0.9)(@types/react-dom@19.2.3(@types/react@19.2.9))(@types/react@19.2.9)(@typescript-eslint/utils@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(@typescript-eslint/parser@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint@9.39.2))(eslint@9.39.2)(globals@16.5.0)(typescript@5.9.3):
+  eslint-config-upleveled@9.4.4(@babel/core@7.26.0)(@types/node@25.0.10)(@types/react-dom@19.2.3(@types/react@19.2.9))(@types/react@19.2.9)(@typescript-eslint/utils@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(@typescript-eslint/parser@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint@9.39.2))(eslint@9.39.2)(globals@16.5.0)(typescript@5.9.3):
     dependencies:
       '@babel/eslint-parser': 7.28.6(@babel/core@7.26.0)(eslint@9.39.2)
       '@eslint/compat': 2.0.1(eslint@9.39.2)
       '@next/eslint-plugin-next': 16.1.2
       '@stylistic/eslint-plugin': 5.7.0(eslint@9.39.2)
-      '@types/node': 25.0.9
+      '@types/node': 25.0.10
       '@types/react': 19.2.9
       '@types/react-dom': 19.2.3(@types/react@19.2.9)
       '@typescript-eslint/eslint-plugin': 8.53.0(@typescript-eslint/parser@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint@9.39.2)(typescript@5.9.3)
@@ -4971,7 +4971,7 @@ snapshots:
       railroad-diagrams: 1.0.0
       randexp: 0.4.6
 
-  next@16.1.4(@babel/core@7.26.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(sass@1.97.2):
+  next@16.1.4(@babel/core@7.26.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(sass@1.97.3):
     dependencies:
       '@next/env': 16.1.4
       '@swc/helpers': 0.5.15
@@ -4990,7 +4990,7 @@ snapshots:
       '@next/swc-linux-x64-musl': 16.1.4
       '@next/swc-win32-arm64-msvc': 16.1.4
       '@next/swc-win32-x64-msvc': 16.1.4
-      sass: 1.97.2
+      sass: 1.97.3
       sharp: 0.34.5
     transitivePeerDependencies:
       - '@babel/core'
@@ -5269,7 +5269,7 @@ snapshots:
     dependencies:
       regexp-tree: 0.1.27
 
-  sass@1.97.2:
+  sass@1.97.3:
     dependencies:
       chokidar: 4.0.3
       immutable: 5.0.2
