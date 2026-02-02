@@ -13,10 +13,10 @@
   "dependencies": {
     "@upleveled/ley": "0.9.2",
     "dotenv-safe": "9.1.0",
-    "next": "16.1.4",
+    "next": "16.1.5",
     "postgres": "3.4.8",
-    "react": "19.2.3",
-    "react-dom": "19.2.3",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
     "sass": "1.97.3",
     "server-only": "0.0.1",
     "sharp": "0.34.5",
@@ -38,5 +38,5 @@
     "stylelint-config-upleveled": "2.0.5",
     "typescript": "5.9.3"
   },
-  "packageManager": "pnpm@10.28.1"
+  "packageManager": "pnpm@10.28.2"
 }
