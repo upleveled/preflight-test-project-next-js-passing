@@ -25,18 +25,18 @@
   "devDependencies": {
     "@ts-safeql/eslint-plugin": "4.2.0",
     "@types/dotenv-safe": "9.1.0",
-    "@types/node": "25.2.1",
-    "@types/react": "19.2.13",
+    "@types/node": "25.2.3",
+    "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "eslint": "9.39.2",
-    "eslint-config-upleveled": "9.4.6",
+    "eslint-config-upleveled": "9.4.7",
     "libpg-query": "17.7.3",
     "prettier": "3.8.1",
     "prettier-plugin-embed": "0.5.1",
     "prettier-plugin-sql": "0.19.2",
-    "stylelint": "17.1.1",
+    "stylelint": "17.2.0",
     "stylelint-config-upleveled": "2.0.5",
     "typescript": "5.9.3"
   },
-  "packageManager": "pnpm@10.28.2"
+  "packageManager": "pnpm@10.29.3"
 }
