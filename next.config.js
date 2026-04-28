@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   typedRoutes: true,
-    typescript: {
+  typescript: {
     // Ignore TypeScript errors because types already checked during CI
     ignoreBuildErrors: true,
   },
