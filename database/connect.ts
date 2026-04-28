@@ -5,7 +5,7 @@ import { setEnvironmentVariables } from '../util/config.js';
 
 setEnvironmentVariables();
 
-declare module globalThis {
+declare namespace globalThis {
   let postgresSqlClient: Sql;
 }
 
