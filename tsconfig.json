@@ -9,9 +9,11 @@
     ],
     "jsx": "preserve",
     "module": "esnext",
-    "moduleResolution": "node"
+    "moduleResolution": "bundler",
+    "noUncheckedSideEffectImports": false
   },
   "include": [
+    "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     "**/*.js",
