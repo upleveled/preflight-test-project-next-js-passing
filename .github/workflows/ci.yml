@@ -77,12 +77,9 @@ jobs:
 
       - run: pnpm migrate up
 
+      # Also generates next-env.d.ts, required for tsc
       - name: Build Next.js app
         run: pnpm build
-
-      # Generate types required for tsc
-      - name: Generate Next.js type definitions
-        run: pnpm next typegen
 
       - name: Run TypeScript Compiler
         run: pnpm tsc
