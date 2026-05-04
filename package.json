@@ -23,7 +23,7 @@
     "tsx": "4.21.0"
   },
   "devDependencies": {
-    "@ts-safeql/eslint-plugin": "5.1.1",
+    "@ts-safeql/eslint-plugin": "5.1.2",
     "@types/dotenv-safe": "9.1.0",
     "@types/node": "25.6.0",
     "@types/react": "19.2.14",
@@ -34,7 +34,7 @@
     "prettier": "3.8.3",
     "prettier-plugin-embed": "0.5.1",
     "prettier-plugin-sql": "0.20.0",
-    "stylelint": "17.9.0",
+    "stylelint": "17.9.1",
     "stylelint-config-upleveled": "2.0.5",
     "typescript": "6.0.3"
   },
