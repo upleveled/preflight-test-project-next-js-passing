@@ -20,12 +20,12 @@
     "sass": "1.99.0",
     "server-only": "0.0.1",
     "sharp": "0.34.5",
-    "tsx": "4.21.1"
+    "tsx": "4.22.0"
   },
   "devDependencies": {
     "@ts-safeql/eslint-plugin": "5.1.2",
     "@types/dotenv-safe": "9.1.0",
-    "@types/node": "25.7.0",
+    "@types/node": "25.8.0",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "eslint": "10.3.0",
