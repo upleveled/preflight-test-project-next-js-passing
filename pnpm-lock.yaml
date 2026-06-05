@@ -40,8 +40,8 @@ importers:
         version: 4.22.3
     devDependencies:
       '@ts-safeql/eslint-plugin':
-        specifier: 5.1.2
-        version: 5.1.2(@typescript-eslint/utils@8.58.2(eslint@10.4.0)(typescript@6.0.3))(eslint@10.4.0)(libpg-query@17.7.3)(typescript@6.0.3)
+        specifier: 5.2.0
+        version: 5.2.0(@typescript-eslint/utils@8.58.2(eslint@10.4.0)(typescript@6.0.3))(eslint@10.4.0)(libpg-query@17.7.3)(typescript@6.0.3)
       '@types/dotenv-safe':
         specifier: 9.1.0
         version: 9.1.0(dotenv@8.6.0)
@@ -824,15 +824,15 @@ packages:
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
 
-  '@ts-safeql/eslint-plugin@5.1.2':
-    resolution: {integrity: sha512-teRw0UZ2WlWLRHHwVbeLj5S/oxC1Ux1XoW2fQ/cxWTBmExgtPX9HGgRIio4lLcHO2Sjre5i2PH3Z/sbouLZ3fg==}
+  '@ts-safeql/eslint-plugin@5.2.0':
+    resolution: {integrity: sha512-NyEGXWPLbj+b7nBmbFUTmvHHeSBKInQlEFurq43wk2mgkNaZvV9yaDurl6MzTvZKB/NeuBMT1hmRfY5kWVYR8Q==}
     peerDependencies:
       '@typescript-eslint/utils': '>=8.0.0'
       eslint: ^9.0.0 || ^10.0.0
       libpg-query: '>=13.2.5'
 
-  '@ts-safeql/plugin-utils@5.0.1':
-    resolution: {integrity: sha512-PlZhh+wdHDJ0gBann0hr0ASp8eiKFci/DkQ2+KL480tpPnPclsU0WdoEWuTTCDU/9HhfiwqPyy9s4jJ2tmVQaA==}
+  '@ts-safeql/plugin-utils@5.1.0':
+    resolution: {integrity: sha512-QhXXXKfEwnPtOBGN3sOJln04E18HuuaEd5TmR+GHgiu4F4v92txdWkh4T+7iYW3OiV4kymMikgzZXHVokl97Ww==}
     peerDependencies:
       '@typescript-eslint/utils': ^8.0.0
       typescript: ^5.0.0
@@ -2896,8 +2896,8 @@ packages:
     peerDependencies:
       zod: ^3.25.0 || ^4.0.0
 
-  zod@4.1.12:
-    resolution: {integrity: sha512-JInaHOamG8pt5+Ey8kGmdcAcg3OL9reK8ltczgHTAwNhMys/6ThXHityHxVV2p3fkw/c+MAvBHFVYHFZDmjMCQ==}
+  zod@4.4.3:
+    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
 
 snapshots:
 
@@ -3193,7 +3193,7 @@ snapshots:
       eslint: 10.4.0
       ts-pattern: 5.9.0
       typescript: 6.0.3
-      zod: 4.1.12
+      zod: 4.4.3
     transitivePeerDependencies:
       - supports-color
 
@@ -3501,9 +3501,9 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@ts-safeql/eslint-plugin@5.1.2(@typescript-eslint/utils@8.58.2(eslint@10.4.0)(typescript@6.0.3))(eslint@10.4.0)(libpg-query@17.7.3)(typescript@6.0.3)':
+  '@ts-safeql/eslint-plugin@5.2.0(@typescript-eslint/utils@8.58.2(eslint@10.4.0)(typescript@6.0.3))(eslint@10.4.0)(libpg-query@17.7.3)(typescript@6.0.3)':
     dependencies:
-      '@ts-safeql/plugin-utils': 5.0.1(@typescript-eslint/utils@8.58.2(eslint@10.4.0)(typescript@6.0.3))(typescript@6.0.3)
+      '@ts-safeql/plugin-utils': 5.1.0(@typescript-eslint/utils@8.58.2(eslint@10.4.0)(typescript@6.0.3))(typescript@6.0.3)
       '@typescript-eslint/utils': 8.58.2(eslint@10.4.0)(typescript@6.0.3)
       chokidar: 4.0.3
       eslint: 10.4.0
@@ -3515,13 +3515,14 @@ snapshots:
       synckit: 0.10.4
       ts-pattern: 5.9.0
       tsx: 4.22.3
-      zod: 4.1.12
+      zod: 4.4.3
     transitivePeerDependencies:
       - typescript
 
-  '@ts-safeql/plugin-utils@5.0.1(@typescript-eslint/utils@8.58.2(eslint@10.4.0)(typescript@6.0.3))(typescript@6.0.3)':
+  '@ts-safeql/plugin-utils@5.1.0(@typescript-eslint/utils@8.58.2(eslint@10.4.0)(typescript@6.0.3))(typescript@6.0.3)':
     dependencies:
       postgres: 3.4.9
+      tsx: 4.22.3
     optionalDependencies:
       '@typescript-eslint/utils': 8.58.2(eslint@10.4.0)(typescript@6.0.3)
       typescript: 6.0.3
@@ -4380,8 +4381,8 @@ snapshots:
       '@babel/parser': 7.28.0
       eslint: 10.4.0
       hermes-parser: 0.25.1
-      zod: 4.1.12
-      zod-validation-error: 4.0.2(zod@4.1.12)
+      zod: 4.4.3
+      zod-validation-error: 4.0.2(zod@4.4.3)
     transitivePeerDependencies:
       - supports-color
 
@@ -5887,8 +5888,8 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zod-validation-error@4.0.2(zod@4.1.12):
+  zod-validation-error@4.0.2(zod@4.4.3):
     dependencies:
-      zod: 4.1.12
+      zod: 4.4.3
 
-  zod@4.1.12: {}
+  zod@4.4.3: {}
