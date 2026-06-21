@@ -40,8 +40,8 @@ importers:
         version: 4.22.4
     devDependencies:
       '@ts-safeql/eslint-plugin':
-        specifier: 5.3.1
-        version: 5.3.1(@typescript-eslint/utils@8.58.2(eslint@10.5.0)(typescript@6.0.3))(eslint@10.5.0)(libpg-query@17.7.3)(typescript@6.0.3)
+        specifier: 5.3.2
+        version: 5.3.2(@typescript-eslint/utils@8.58.2(eslint@10.5.0)(typescript@6.0.3))(eslint@10.5.0)(libpg-query@17.7.3)(typescript@6.0.3)
       '@types/dotenv-safe':
         specifier: 9.1.0
         version: 9.1.0(dotenv@8.6.0)
@@ -982,8 +982,8 @@ packages:
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
 
-  '@ts-safeql/eslint-plugin@5.3.1':
-    resolution: {integrity: sha512-C6iRN3jeXmP+knH0JOu48vKny9tT2L+T4ABTJ3031EdRw+p7ooiqmEFmm4d8BTmi1rVFt5uPLq0Z2bychRP9JA==}
+  '@ts-safeql/eslint-plugin@5.3.2':
+    resolution: {integrity: sha512-ywW0hxZPZLWXZVWBfBNLlv72dUq/sHJeeq7dL5s9pxnkcsfmw+yTyvYj/phfjkljXjdE1UQGeHv7XWB0Y98U9Q==}
     peerDependencies:
       '@typescript-eslint/utils': '>=8.0.0'
       eslint: ^9.0.0 || ^10.0.0
@@ -3772,7 +3772,7 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@ts-safeql/eslint-plugin@5.3.1(@typescript-eslint/utils@8.58.2(eslint@10.5.0)(typescript@6.0.3))(eslint@10.5.0)(libpg-query@17.7.3)(typescript@6.0.3)':
+  '@ts-safeql/eslint-plugin@5.3.2(@typescript-eslint/utils@8.58.2(eslint@10.5.0)(typescript@6.0.3))(eslint@10.5.0)(libpg-query@17.7.3)(typescript@6.0.3)':
     dependencies:
       '@ts-safeql/plugin-utils': 5.1.0(@typescript-eslint/utils@8.58.2(eslint@10.5.0)(typescript@6.0.3))(typescript@6.0.3)
       '@typescript-eslint/utils': 8.58.2(eslint@10.5.0)(typescript@6.0.3)
