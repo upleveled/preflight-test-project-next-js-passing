@@ -40,8 +40,8 @@ importers:
         version: 4.22.4
     devDependencies:
       '@ts-safeql/eslint-plugin':
-        specifier: 5.3.2
-        version: 5.3.2(@typescript-eslint/utils@8.58.2(eslint@10.5.0)(typescript@6.0.3))(eslint@10.5.0)(libpg-query@17.7.3)(typescript@6.0.3)
+        specifier: 5.4.0
+        version: 5.4.0(@typescript-eslint/utils@8.58.2(eslint@10.5.0)(typescript@6.0.3))(eslint@10.5.0)(libpg-query@17.7.3)(typescript@6.0.3)
       '@types/dotenv-safe':
         specifier: 9.1.0
         version: 9.1.0(dotenv@8.6.0)
@@ -982,15 +982,15 @@ packages:
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
 
-  '@ts-safeql/eslint-plugin@5.3.2':
-    resolution: {integrity: sha512-ywW0hxZPZLWXZVWBfBNLlv72dUq/sHJeeq7dL5s9pxnkcsfmw+yTyvYj/phfjkljXjdE1UQGeHv7XWB0Y98U9Q==}
+  '@ts-safeql/eslint-plugin@5.4.0':
+    resolution: {integrity: sha512-fCAcZolMHlQkI8Mk2yTjD471yJbAETYM39peTZEfdnRCLoyIQ4mJnWdYCS1u/C1vODjljSze5IMlajXaOhAb2Q==}
     peerDependencies:
       '@typescript-eslint/utils': '>=8.0.0'
       eslint: ^9.0.0 || ^10.0.0
       libpg-query: '>=13.2.5'
 
-  '@ts-safeql/plugin-utils@5.1.0':
-    resolution: {integrity: sha512-QhXXXKfEwnPtOBGN3sOJln04E18HuuaEd5TmR+GHgiu4F4v92txdWkh4T+7iYW3OiV4kymMikgzZXHVokl97Ww==}
+  '@ts-safeql/plugin-utils@5.2.0':
+    resolution: {integrity: sha512-fWkFlgV/k5/t0MRSjBrQqet3gPyBO651zrmGqaQbat+hP2bYgxnbpGx6pcHGjtS7+51b6pj9tG7MahWQz4jC0Q==}
     peerDependencies:
       '@typescript-eslint/utils': ^8.0.0
       typescript: ^5.0.0
@@ -3772,9 +3772,9 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@ts-safeql/eslint-plugin@5.3.2(@typescript-eslint/utils@8.58.2(eslint@10.5.0)(typescript@6.0.3))(eslint@10.5.0)(libpg-query@17.7.3)(typescript@6.0.3)':
+  '@ts-safeql/eslint-plugin@5.4.0(@typescript-eslint/utils@8.58.2(eslint@10.5.0)(typescript@6.0.3))(eslint@10.5.0)(libpg-query@17.7.3)(typescript@6.0.3)':
     dependencies:
-      '@ts-safeql/plugin-utils': 5.1.0(@typescript-eslint/utils@8.58.2(eslint@10.5.0)(typescript@6.0.3))(typescript@6.0.3)
+      '@ts-safeql/plugin-utils': 5.2.0(@typescript-eslint/utils@8.58.2(eslint@10.5.0)(typescript@6.0.3))(typescript@6.0.3)
       '@typescript-eslint/utils': 8.58.2(eslint@10.5.0)(typescript@6.0.3)
       chokidar: 4.0.3
       eslint: 10.5.0
@@ -3790,7 +3790,7 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  '@ts-safeql/plugin-utils@5.1.0(@typescript-eslint/utils@8.58.2(eslint@10.5.0)(typescript@6.0.3))(typescript@6.0.3)':
+  '@ts-safeql/plugin-utils@5.2.0(@typescript-eslint/utils@8.58.2(eslint@10.5.0)(typescript@6.0.3))(typescript@6.0.3)':
     dependencies:
       postgres: 3.4.9
       tsx: 4.22.4
