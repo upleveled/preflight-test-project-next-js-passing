@@ -13,10 +13,10 @@
   "dependencies": {
     "@upleveled/ley": "1.0.0",
     "dotenv-safe": "9.1.0",
-    "next": "16.2.10",
+    "next": "16.2.11",
     "postgres": "3.4.9",
-    "react": "19.2.7",
-    "react-dom": "19.2.7",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
     "sass": "1.101.3",
     "server-only": "0.0.1",
     "sharp": "0.35.3",
