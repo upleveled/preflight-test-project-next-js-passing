@@ -16,7 +16,7 @@ importers:
         version: 9.1.0(dotenv@8.6.0)
       next:
         specifier: 16.2.11
-        version: 16.2.11(@babel/core@7.26.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.101.6)
+        version: 16.2.11(@babel/core@7.26.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.101.7)
       postgres:
         specifier: 3.4.9
         version: 3.4.9
@@ -27,8 +27,8 @@ importers:
         specifier: 19.2.8
         version: 19.2.8(react@19.2.8)
       sass:
-        specifier: 1.101.6
-        version: 1.101.6
+        specifier: 1.101.7
+        version: 1.101.7
       server-only:
         specifier: 0.0.1
         version: 0.0.1
@@ -2669,8 +2669,8 @@ packages:
   safe-regex@2.1.1:
     resolution: {integrity: sha512-rx+x8AMzKb5Q5lQ95Zoi6ZbJqwCLkqi3XuJXp5P3rT8OEc6sZCJG5AE5dU3lsgRr/F4Bs31jSlVN+j5KrsGu9A==}
 
-  sass@1.101.6:
-    resolution: {integrity: sha512-j8qYug9WuX19eU5sxJWQlbR8RYhKgXiOYgGjkJRkcW35c3neWtxPdcUW0saN6Od2L0aqEp0AmH9R/QeAxrffMQ==}
+  sass@1.101.7:
+    resolution: {integrity: sha512-cDeUYU0dhwKVbpYg/ppsjyuoddxYhWlJOkRoI7+/iZsaSp7iowWDfm+tL2HcUafedWBDvbf/+hx0QRgKG4JSHA==}
     engines: {node: '>=20.19.0'}
     hasBin: true
 
@@ -5337,7 +5337,7 @@ snapshots:
       railroad-diagrams: 1.0.0
       randexp: 0.4.6
 
-  next@16.2.11(@babel/core@7.26.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.101.6):
+  next@16.2.11(@babel/core@7.26.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.101.7):
     dependencies:
       '@next/env': 16.2.11
       '@swc/helpers': 0.5.15
@@ -5356,7 +5356,7 @@ snapshots:
       '@next/swc-linux-x64-musl': 16.2.11
       '@next/swc-win32-arm64-msvc': 16.2.11
       '@next/swc-win32-x64-msvc': 16.2.11
-      sass: 1.101.6
+      sass: 1.101.7
       sharp: 0.34.5
     transitivePeerDependencies:
       - '@babel/core'
@@ -5637,7 +5637,7 @@ snapshots:
     dependencies:
       regexp-tree: 0.1.27
 
-  sass@1.101.6:
+  sass@1.101.7:
     dependencies:
       chokidar: 5.0.0
       immutable: 5.1.5
