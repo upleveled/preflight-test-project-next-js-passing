@@ -93,5 +93,5 @@ jobs:
       - name: Install and run Preflight
         run: |
           # --config flag: avoid the default 1-day minimumReleaseAge for pnpm
-          pnpm add --global --config.minimum-release-age-exclude='@upleveled/preflight' @upleveled/preflight
+          pnpm add --global --config.minimumReleaseAgeExclude='@upleveled/preflight' @upleveled/preflight
           preflight
