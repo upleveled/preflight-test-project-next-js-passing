@@ -1,3 +1,11 @@
+# Allow build scripts for trusted dependencies
+# - https://pnpm.io/settings#allowbuilds
+allowBuilds:
+  esbuild: true
+  libpg-query: true
+  sharp: true
+  unrs-resolver: false
+
 # Prevents installation of packages newer than 7 days
 # to mitigate supply chain risks
 # - https://pnpm.io/settings#minimumreleaseage
@@ -6,14 +14,6 @@ minimumReleaseAgeExclude:
   - "@upleveled/*"
   - eslint-config-upleveled
   - stylelint-config-upleveled
-
-# Allow build scripts for trusted dependencies
-# - https://pnpm.io/settings#onlybuiltdependencies
-onlyBuiltDependencies:
-  - esbuild
-  - libpg-query
-  - sharp
-  - unrs-resolver
 
 # Fail on pnpm ignored build scripts
 # - https://pnpm.io/settings#strictdepbuilds
