@@ -266,8 +266,8 @@ importers:
         specifier: 3.9.10
         version: 3.9.10
       prettier-plugin-embed:
-        specifier: 0.7.0
-        version: 0.7.0
+        specifier: 0.7.1
+        version: 0.7.1
       prettier-plugin-sql:
         specifier: 0.20.0
         version: 0.20.0(prettier@3.9.10)
@@ -2556,8 +2556,8 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  prettier-plugin-embed@0.7.0:
-    resolution: {integrity: sha512-klXE74iYU95NC0SdN6bLn/A3UpmmIUaRWAjqF2D4rl2mffBaDQQVy/8RxsbDKmHgj2+7r60/PPWzo9koNYmKlA==}
+  prettier-plugin-embed@0.7.1:
+    resolution: {integrity: sha512-QYc6ZoXNmU1K4oyuyHiWDgyREe65gmGqdwxtI+VDTG2SOY8bdCxjqsxTS5dSe2ULzYpZRkC/mTIs6iSubIyucA==}
 
   prettier-plugin-sql@0.20.0:
     resolution: {integrity: sha512-7GRuduJIbWd10bFfYdFuymZdcVF37ZCukiuVi2a4c5ccqjAxHQtKbK7zSKyqGrFjCOBLQVVz4BStKWV7YvxAFA==}
@@ -5438,7 +5438,7 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-embed@0.7.0:
+  prettier-plugin-embed@0.7.1:
     dependencies:
       '@types/estree': 1.0.9
       dedent: 1.7.2
