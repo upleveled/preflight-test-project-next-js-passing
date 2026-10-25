@@ -266,8 +266,8 @@ importers:
         specifier: 3.9.10
         version: 3.9.10
       prettier-plugin-embed:
-        specifier: 0.7.3
-        version: 0.7.3
+        specifier: 0.8.0
+        version: 0.8.0
       prettier-plugin-sql:
         specifier: 0.20.0
         version: 0.20.0(prettier@3.9.10)
@@ -1572,14 +1572,6 @@ packages:
       supports-color:
         optional: true
 
-  dedent@1.7.2:
-    resolution: {integrity: sha512-WzMx3mW98SN+zn3hgemf4OzdmyNhhhKz5Ay0pUfQiMQ3e1g+xmTJWp/pKdwKVXhdSkAEGIIzqeuWrL3mV/AXbA==}
-    peerDependencies:
-      babel-plugin-macros: ^3.1.0
-    peerDependenciesMeta:
-      babel-plugin-macros:
-        optional: true
-
   deep-is@0.1.4:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
 
@@ -2556,8 +2548,8 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  prettier-plugin-embed@0.7.3:
-    resolution: {integrity: sha512-HvalRhe+FScd3X4F7HqYIY0s5IBWZolLrAXR9A+/oU+NFiBq1ukjS2L9pJW1MQUQvYdhdoWhQ3/mTitI7BKiYQ==}
+  prettier-plugin-embed@0.8.0:
+    resolution: {integrity: sha512-jszY5LaU2LOp2TOMD/z/zGrv5Pl7pC03LPlMZT7a7tCrxdB1JOIQQ4/JGsDvRl8zKWQRutn5pxX3i2+HYqHmgw==}
 
   prettier-plugin-sql@0.20.0:
     resolution: {integrity: sha512-7GRuduJIbWd10bFfYdFuymZdcVF37ZCukiuVi2a4c5ccqjAxHQtKbK7zSKyqGrFjCOBLQVVz4BStKWV7YvxAFA==}
@@ -4251,8 +4243,6 @@ snapshots:
     optionalDependencies:
       supports-color: 10.2.2
 
-  dedent@1.7.2: {}
-
   deep-is@0.1.4: {}
 
   define-data-property@1.1.4:
@@ -5434,13 +5424,10 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-embed@0.7.3:
+  prettier-plugin-embed@0.8.0:
     dependencies:
       '@types/estree': 1.0.9
-      dedent: 1.7.2
       tiny-jsonc: 1.0.2
-    transitivePeerDependencies:
-      - babel-plugin-macros
 
   prettier-plugin-sql@0.20.0(prettier@3.9.10):
     dependencies:
