@@ -239,8 +239,8 @@ importers:
         version: 4.23.15
     devDependencies:
       '@ts-safeql/eslint-plugin':
-        specifier: 5.4.1
-        version: 5.4.1(@typescript-eslint/utils@8.71.0(eslint@10.13.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(eslint@10.13.0(supports-color@10.2.2))(libpg-query@18.1.5)(typescript@6.0.3)
+        specifier: 5.4.2
+        version: 5.4.2(@typescript-eslint/utils@8.71.0(eslint@10.13.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(eslint@10.13.0(supports-color@10.2.2))(libpg-query@18.1.5)(typescript@6.0.3)
       '@types/dotenv-safe':
         specifier: 9.1.0
         version: 9.1.0(dotenv@8.6.0)
@@ -1052,18 +1052,18 @@ packages:
   '@swc/helpers@0.5.23':
     resolution: {integrity: sha512-5lSsMOTXURePglDfvuAQUqkGek9Hg2kksOYay2m0+XR++b2NWYL/4sWyuvVBIs8oKnJaxkdi9whaL/sqN13afw==}
 
-  '@ts-safeql/eslint-plugin@5.4.1':
-    resolution: {integrity: sha512-/AA7+fcx316WyoBxqCKI0+QYkCPzQePiQ0EqQwYIblUiFfL0knhPK1qKzNrNgEECE2PIEBhw85XngTzRwmUFKw==}
+  '@ts-safeql/eslint-plugin@5.4.2':
+    resolution: {integrity: sha512-84QIaCKJsLgBJBwrfj0hyHdXcj69+LhB/FuP/x6X/NTyJKO7wtuq0W/kOMciad6KWJVpCrXWsDo6FShW4Q2ZXA==}
     peerDependencies:
       '@typescript-eslint/utils': '>=8.0.0'
       eslint: ^9.0.0 || ^10.0.0
       libpg-query: '>=13.2.5'
 
-  '@ts-safeql/plugin-utils@5.3.0':
-    resolution: {integrity: sha512-olVcIBrMDDU8Sf/YRwJRjIZ24IXmRD+0gx2BekIfcdxJRIOqlfzbhuoqneMdsiz28M/SwUfbIuyFiKMPbLG1vw==}
+  '@ts-safeql/plugin-utils@5.3.1':
+    resolution: {integrity: sha512-YQdapipUX0BWMnhgfNQ+vIQq96SxqsS/do/3fMzXptzEuOOwTO4N2spXs+w2lLs0VQ1Hl/DSgXdYu6BTUEF5uQ==}
     peerDependencies:
       '@typescript-eslint/utils': ^8.0.0
-      typescript: ^5.0.0
+      typescript: ^5.0.0 || ^6.0.0
     peerDependenciesMeta:
       '@typescript-eslint/utils':
         optional: true
@@ -2578,9 +2578,6 @@ packages:
     resolution: {integrity: sha512-+Owyggi9IxT1ePKGafcI87ubSmxol6smwJ+RAHDQlx9+9cPwFWDiKFFCPuWhr9ignlGpZ9vDQLw67N4dcTVFEA==}
     engines: {node: '>=20'}
 
-  quansync@0.2.10:
-    resolution: {integrity: sha512-t41VRkMYbkHyCYmOvx/6URnN80H7k4X0lLdBMGsz+maAwrJQYB1djpV6vHrQIBE0WBSGqhtEHrK9U3DWWH8v7A==}
-
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
@@ -3702,9 +3699,9 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@ts-safeql/eslint-plugin@5.4.1(@typescript-eslint/utils@8.71.0(eslint@10.13.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(eslint@10.13.0(supports-color@10.2.2))(libpg-query@18.1.5)(typescript@6.0.3)':
+  '@ts-safeql/eslint-plugin@5.4.2(@typescript-eslint/utils@8.71.0(eslint@10.13.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(eslint@10.13.0(supports-color@10.2.2))(libpg-query@18.1.5)(typescript@6.0.3)':
     dependencies:
-      '@ts-safeql/plugin-utils': 5.3.0(@typescript-eslint/utils@8.71.0(eslint@10.13.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(typescript@6.0.3)
+      '@ts-safeql/plugin-utils': 5.3.1(@typescript-eslint/utils@8.71.0(eslint@10.13.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(typescript@6.0.3)
       '@typescript-eslint/utils': 8.71.0(eslint@10.13.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)
       chokidar: 4.0.3
       eslint: 10.13.0(supports-color@10.2.2)
@@ -3712,7 +3709,6 @@ snapshots:
       libpg-query: 18.1.5
       pg-connection-string: 2.7.0
       postgres: 3.4.9
-      quansync: 0.2.10
       synckit: 0.10.4
       ts-pattern: 5.9.0
       tsx: 4.23.15
@@ -3720,7 +3716,7 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  '@ts-safeql/plugin-utils@5.3.0(@typescript-eslint/utils@8.71.0(eslint@10.13.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(typescript@6.0.3)':
+  '@ts-safeql/plugin-utils@5.3.1(@typescript-eslint/utils@8.71.0(eslint@10.13.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(typescript@6.0.3)':
     dependencies:
       postgres: 3.4.9
       tsx: 4.23.15
@@ -5461,8 +5457,6 @@ snapshots:
   qified@0.10.1:
     dependencies:
       hookified: 2.2.0
-
-  quansync@0.2.10: {}
 
   queue-microtask@1.2.3: {}
 
