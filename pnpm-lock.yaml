@@ -215,7 +215,7 @@ importers:
         version: 9.1.0(dotenv@8.6.0)
       next:
         specifier: 16.4.2
-        version: 16.4.2(@babel/core@7.26.0(supports-color@10.2.2))(@types/node@26.6.5)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(sass@1.106.0)
+        version: 16.4.2(@babel/core@7.26.0(supports-color@10.2.2))(@types/node@26.6.5)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(sass@1.106.1)
       postgres:
         specifier: 3.4.9
         version: 3.4.9
@@ -226,8 +226,8 @@ importers:
         specifier: 19.3.1
         version: 19.3.1(react@19.3.1)
       sass:
-        specifier: 1.106.0
-        version: 1.106.0
+        specifier: 1.106.1
+        version: 1.106.1
       server-only:
         specifier: 0.0.1
         version: 0.0.1
@@ -2661,8 +2661,8 @@ packages:
   safe-regex@2.1.1:
     resolution: {integrity: sha512-rx+x8AMzKb5Q5lQ95Zoi6ZbJqwCLkqi3XuJXp5P3rT8OEc6sZCJG5AE5dU3lsgRr/F4Bs31jSlVN+j5KrsGu9A==}
 
-  sass@1.106.0:
-    resolution: {integrity: sha512-JHAqUksyijU5tsmDLCDq8/IX3Mq8mVkOtxvcXnUdwy8vsX5MVnvQauMomauxyuEux8uBJdT/OuBwWBYavoWUqQ==}
+  sass@1.106.1:
+    resolution: {integrity: sha512-kD+Gi66vycZcbJt+42NC4z4PXNMcCajVrJPhqoKKXy5cOBMmJQt052CxIBcRjwYXeImHYOpu/ydWWGZQIenl7A==}
     engines: {node: '>=20.19.0'}
     hasBin: true
 
@@ -5182,7 +5182,7 @@ snapshots:
       railroad-diagrams: 1.0.0
       randexp: 0.4.6
 
-  next@16.4.2(@babel/core@7.26.0(supports-color@10.2.2))(@types/node@26.6.5)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(sass@1.106.0):
+  next@16.4.2(@babel/core@7.26.0(supports-color@10.2.2))(@types/node@26.6.5)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(sass@1.106.1):
     dependencies:
       '@next/env': 16.4.2
       '@swc/helpers': 0.5.23
@@ -5201,7 +5201,7 @@ snapshots:
       '@next/swc-linux-x64-musl': 16.4.2
       '@next/swc-win32-arm64-msvc': 16.4.2
       '@next/swc-win32-x64-msvc': 16.4.2
-      sass: 1.106.0
+      sass: 1.106.1
       sharp: 0.35.5(@types/node@26.6.5)
     transitivePeerDependencies:
       - '@babel/core'
@@ -5487,7 +5487,7 @@ snapshots:
     dependencies:
       regexp-tree: 0.1.27
 
-  sass@1.106.0:
+  sass@1.106.1:
     dependencies:
       chokidar: 5.0.0
       immutable: 5.1.5
