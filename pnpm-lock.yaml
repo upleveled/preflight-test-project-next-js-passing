@@ -240,7 +240,7 @@ importers:
     devDependencies:
       '@ts-safeql/eslint-plugin':
         specifier: 5.4.2
-        version: 5.4.2(@typescript-eslint/utils@8.71.2(eslint@10.13.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(eslint@10.13.0(supports-color@10.2.2))(libpg-query@18.1.5)(typescript@6.0.3)
+        version: 5.4.2(@typescript-eslint/utils@8.71.2(eslint@10.13.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(eslint@10.13.0(supports-color@10.2.2))(libpg-query@18.2.0)(typescript@6.0.3)
       '@types/dotenv-safe':
         specifier: 9.1.0
         version: 9.1.0(dotenv@8.6.0)
@@ -260,8 +260,8 @@ importers:
         specifier: 11.0.2
         version: 11.0.2(@types/node@26.6.5)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(@typescript-eslint/utils@8.71.2(eslint@10.13.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(eslint-import-resolver-node@0.3.9(supports-color@10.2.2))(eslint-plugin-import@2.29.1)(eslint@10.13.0(supports-color@10.2.2))(globals@17.13.0)(supports-color@10.2.2)(typescript@6.0.3)
       libpg-query:
-        specifier: 18.1.5
-        version: 18.1.5
+        specifier: 18.2.0
+        version: 18.2.0
       prettier:
         specifier: 3.9.10
         version: 3.9.10
@@ -2284,8 +2284,8 @@ packages:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
     engines: {node: '>= 0.8.0'}
 
-  libpg-query@18.1.5:
-    resolution: {integrity: sha512-xsksgH106LyVUylIp2bJz1MPFmVVIGKbB8belGWmh+J8/i38w8eM1twDIBnd97tzeNQFctH9MWKMthl22+fWcQ==}
+  libpg-query@18.2.0:
+    resolution: {integrity: sha512-xoNEjLosxCZsDIP9DXjy9/m3g3uc3trfSg2G3hm2CEzqC/DVorogLy7sKOMxPLDRffr2eibbF7klx0ySOPjB6Q==}
 
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
@@ -3682,14 +3682,14 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@ts-safeql/eslint-plugin@5.4.2(@typescript-eslint/utils@8.71.2(eslint@10.13.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(eslint@10.13.0(supports-color@10.2.2))(libpg-query@18.1.5)(typescript@6.0.3)':
+  '@ts-safeql/eslint-plugin@5.4.2(@typescript-eslint/utils@8.71.2(eslint@10.13.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(eslint@10.13.0(supports-color@10.2.2))(libpg-query@18.2.0)(typescript@6.0.3)':
     dependencies:
       '@ts-safeql/plugin-utils': 5.3.1(@typescript-eslint/utils@8.71.2(eslint@10.13.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(typescript@6.0.3)
       '@typescript-eslint/utils': 8.71.2(eslint@10.13.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)
       chokidar: 4.0.3
       eslint: 10.13.0(supports-color@10.2.2)
       fp-ts: 2.16.9
-      libpg-query: 18.1.5
+      libpg-query: 18.2.0
       pg-connection-string: 2.7.0
       postgres: 3.4.9
       synckit: 0.10.4
@@ -5113,7 +5113,7 @@ snapshots:
       prelude-ls: 1.2.1
       type-check: 0.4.0
 
-  libpg-query@18.1.5:
+  libpg-query@18.2.0:
     dependencies:
       '@pgsql/types': 18.0.0
 
