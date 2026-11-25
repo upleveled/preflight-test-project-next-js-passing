@@ -239,8 +239,8 @@ importers:
         version: 4.23.15
     devDependencies:
       '@ts-safeql/eslint-plugin':
-        specifier: 5.4.3
-        version: 5.4.3(@typescript-eslint/utils@8.72.0(eslint@10.15.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(eslint@10.15.0(supports-color@10.2.2))(libpg-query@18.2.4)(typescript@6.0.3)
+        specifier: 5.4.4
+        version: 5.4.4(@typescript-eslint/utils@8.72.0(eslint@10.15.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(eslint@10.15.0(supports-color@10.2.2))(libpg-query@18.2.4)(typescript@6.0.3)
       '@types/dotenv-safe':
         specifier: 9.1.0
         version: 9.1.0(dotenv@8.6.0)
@@ -1079,8 +1079,8 @@ packages:
   '@swc/helpers@0.5.23':
     resolution: {integrity: sha512-5lSsMOTXURePglDfvuAQUqkGek9Hg2kksOYay2m0+XR++b2NWYL/4sWyuvVBIs8oKnJaxkdi9whaL/sqN13afw==}
 
-  '@ts-safeql/eslint-plugin@5.4.3':
-    resolution: {integrity: sha512-3HOghCLXEHkQgRgf3QRpS5hCwE0CgHWgsTfZZYUAX1nD4x1zioDsLMZxLD4WX/U6IBGiQFklBBriMTbbDFr76A==}
+  '@ts-safeql/eslint-plugin@5.4.4':
+    resolution: {integrity: sha512-b64+jO1YU6W23bypxELy6dENQ6/eNRMYTp/sZLhWjAiHio/yU+3M4v8QatpbgNCUFbssOCDEOKdSJb0pGKGeGw==}
     peerDependencies:
       '@typescript-eslint/utils': '>=8.0.0'
       eslint: ^9.0.0 || ^10.0.0
@@ -3784,7 +3784,7 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@ts-safeql/eslint-plugin@5.4.3(@typescript-eslint/utils@8.72.0(eslint@10.15.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(eslint@10.15.0(supports-color@10.2.2))(libpg-query@18.2.4)(typescript@6.0.3)':
+  '@ts-safeql/eslint-plugin@5.4.4(@typescript-eslint/utils@8.72.0(eslint@10.15.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(eslint@10.15.0(supports-color@10.2.2))(libpg-query@18.2.4)(typescript@6.0.3)':
     dependencies:
       '@ts-safeql/plugin-utils': 5.3.1(@typescript-eslint/utils@8.72.0(eslint@10.15.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(typescript@6.0.3)
       '@typescript-eslint/utils': 8.72.0(eslint@10.15.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)
